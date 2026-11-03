@@ -1,0 +1,337 @@
+{
+  "generatedAt": "2026-11-03T17:52:41.955Z",
+  "items": {
+    "home": {
+      "file": "assets/audio/home.mp3",
+      "text": "Abertura do treinamento. Segurança do trabalho. NR 17, Ergonomia no check out. Aprenda a cuidar do seu corpo no check out, seguindo a NR 17. São cinco módulos, com conteúdo completo, em treinamento cem por cento online. Na imagem: capa do treinamento, instrutora da TecnoCursos na área de check outs da loja. Na imagem: logo TecnoCursos."
+    },
+    "menu-1": {
+      "file": "assets/audio/menu-1.mp3",
+      "text": "NR 17, Ergonomia no check out. Conteúdo programático completo. Módulo 1, Ergonomia e postura. Módulo 2, Posto de trabalho e equipamentos. Módulo 3, Mercadorias e organização do trabalho. Módulo 4, Postura, LER/DORT e ginástica laboral. Módulo 5, Revisão e duelo. Módulo 1 de 5 liberado."
+    },
+    "menu-2": {
+      "file": "assets/audio/menu-2.mp3",
+      "text": "NR 17, Ergonomia no check out. Conteúdo programático completo. Módulo 1, Ergonomia e postura. Módulo 2, Posto de trabalho e equipamentos. Módulo 3, Mercadorias e organização do trabalho. Módulo 4, Postura, LER/DORT e ginástica laboral. Módulo 5, Revisão e duelo. Módulo 2 de 5 liberado."
+    },
+    "menu-3": {
+      "file": "assets/audio/menu-3.mp3",
+      "text": "NR 17, Ergonomia no check out. Conteúdo programático completo. Módulo 1, Ergonomia e postura. Módulo 2, Posto de trabalho e equipamentos. Módulo 3, Mercadorias e organização do trabalho. Módulo 4, Postura, LER/DORT e ginástica laboral. Módulo 5, Revisão e duelo. Módulo 3 de 5 liberado."
+    },
+    "menu-4": {
+      "file": "assets/audio/menu-4.mp3",
+      "text": "NR 17, Ergonomia no check out. Conteúdo programático completo. Módulo 1, Ergonomia e postura. Módulo 2, Posto de trabalho e equipamentos. Módulo 3, Mercadorias e organização do trabalho. Módulo 4, Postura, LER/DORT e ginástica laboral. Módulo 5, Revisão e duelo. Módulo 4 de 5 liberado."
+    },
+    "menu-5": {
+      "file": "assets/audio/menu-5.mp3",
+      "text": "NR 17, Ergonomia no check out. Conteúdo programático completo. Módulo 1, Ergonomia e postura. Módulo 2, Posto de trabalho e equipamentos. Módulo 3, Mercadorias e organização do trabalho. Módulo 4, Postura, LER/DORT e ginástica laboral. Módulo 5, Revisão e duelo. Módulo 5 de 5 liberado."
+    },
+    "menu-done": {
+      "file": "assets/audio/menu-done.mp3",
+      "text": "NR 17, Ergonomia no check out. Conteúdo programático completo. Módulo 1, Ergonomia e postura. Módulo 2, Posto de trabalho e equipamentos. Módulo 3, Mercadorias e organização do trabalho. Módulo 4, Postura, LER/DORT e ginástica laboral. Módulo 5, Revisão e duelo. Treinamento concluído. Você finalizou todos os módulos."
+    },
+    "m1-result-pass": {
+      "file": "assets/audio/m1-result-pass.mp3",
+      "text": "Módulo 1 concluído. Título conquistado. POSTURA EM FOCO. Você sabe o que é ergonomia e por que a postura importa no check out."
+    },
+    "m1-result-fail": {
+      "file": "assets/audio/m1-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m2-result-pass": {
+      "file": "assets/audio/m2-result-pass.mp3",
+      "text": "Módulo 2 concluído. Título conquistado. POSTO AJUSTADO. Você sabe como deve ser o posto, a cadeira e os equipamentos do check out."
+    },
+    "m2-result-fail": {
+      "file": "assets/audio/m2-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m3-result-pass": {
+      "file": "assets/audio/m3-result-pass.mp3",
+      "text": "Módulo 3 concluído. Título conquistado. TRABALHO ORGANIZADO. Você sabe como manusear mercadorias e organizar o atendimento sem sobrecarga."
+    },
+    "m3-result-fail": {
+      "file": "assets/audio/m3-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m4-result-pass": {
+      "file": "assets/audio/m4-result-pass.mp3",
+      "text": "Módulo 4 concluído. Título conquistado. CORPO EM EQUILÍBRIO. Você sabe prevenir dores, manter a postura neutra e fazer os alongamentos."
+    },
+    "m4-result-fail": {
+      "file": "assets/audio/m4-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m5-result-pass": {
+      "file": "assets/audio/m5-result-pass.mp3",
+      "text": "Módulo 5 concluído. Título conquistado. CHECK OUT ERGONÔMICO. Você concluiu o treinamento de ergonomia no check out."
+    },
+    "m5-result-fail": {
+      "file": "assets/audio/m5-result-fail.mp3",
+      "text": "Desafio não concluído. É necessário acertar o mínimo de questões para avançar. Revise os temas listados na tela e tente novamente."
+    },
+    "m1-cover": {
+      "file": "assets/audio/m1-cover.mp3",
+      "text": "Módulo 1, Ergonomia e postura. O que é ergonomia, de onde vem a palavra, como o corpo trabalha e quais são as três áreas da ergonomia. Na imagem: Capa do Módulo 1: Ergonomia e postura."
+    },
+    "m1-v-1": {
+      "file": "assets/audio/m1-v-1.mp3",
+      "text": "Vídeo. Abertura: você já pensou na sua postura hoje?."
+    },
+    "m1-reflexao": {
+      "file": "assets/audio/m1-reflexao.mp3",
+      "text": "Antes de começar. Você já pensou na sua postura hoje? Como está o seu corpo agora? O segredo está na postura correta."
+    },
+    "m1-v-2": {
+      "file": "assets/audio/m1-v-2.mp3",
+      "text": "Vídeo. A origem da ergonomia e a segurança do trabalho."
+    },
+    "m1-v-3": {
+      "file": "assets/audio/m1-v-3.mp3",
+      "text": "Vídeo. A definição da norma e o que a ergonomia traz."
+    },
+    "m1-o-que-e": {
+      "file": "assets/audio/m1-o-que-e.mp3",
+      "text": "O que é ergonomia. Pessoa e trabalho: Estuda a interação física entre as pessoas e o seu trabalho. Adaptar, não forçar: Adapta o trabalho, o equipamento e o ambiente ao trabalhador. Ergos e nomos: Ergos = trabalho. Nomos = lei, regra. Ergonomia quer dizer “leis do trabalho”."
+    },
+    "m1-v-4": {
+      "file": "assets/audio/m1-v-4.mp3",
+      "text": "Vídeo. O corpo no trabalho."
+    },
+    "m1-v-5": {
+      "file": "assets/audio/m1-v-5.mp3",
+      "text": "Vídeo. As 3 áreas da ergonomia."
+    },
+    "m1-areas": {
+      "file": "assets/audio/m1-areas.mp3",
+      "text": "As 3 áreas da ergonomia."
+    },
+    "m1-quiz-intro": {
+      "file": "assets/audio/m1-quiz-intro.mp3",
+      "text": "Desafio, Ergonomia em foco. 3 perguntas cronometradas sobre ergonomia e postura. Mínimo de 2 acertos para avançar."
+    },
+    "m1-q1": {
+      "file": "assets/audio/m1-q1.mp3",
+      "text": "O que a ergonomia busca? Opção 1: Adaptar o trabalhador ao equipamento. Opção 2: Adaptar o trabalho, o equipamento e o ambiente ao trabalhador. Opção 3: Aumentar só a velocidade do atendimento. Na imagem: Cena neutra: posto de caixa vazio de uma loja, visto de frente."
+    },
+    "m1-q2": {
+      "file": "assets/audio/m1-q2.mp3",
+      "text": "Quem deve fazer o transporte de grandes cargas e pesos, segundo o treinamento? Opção 1: O operador de caixa, com muito cuidado. Opção 2: Qualquer colega que estiver por perto. Opção 3: Máquinas e carrinhos. Na imagem: Cena neutra: corredor de loja com carrinhos plataforma parados."
+    },
+    "m1-q3": {
+      "file": "assets/audio/m1-q3.mp3",
+      "text": "O que significa a palavra ergonomia? Opção 1: Ergos é trabalho e nomos é lei, regra. Opção 2: Ergos é máquina e nomos é velocidade. Opção 3: Ergos é corpo e nomos é descanso. Na imagem: Cena neutra: uma prancheta e livros sobre uma mesa clara."
+    },
+    "m2-cover": {
+      "file": "assets/audio/m2-cover.mp3",
+      "text": "Módulo 2, Posto de trabalho e equipamentos. O que o Anexo I da NR 17 pede para o mobiliário, a cadeira, os equipamentos e o ambiente do check out. Na imagem: Capa do Módulo 2: Posto de trabalho e equipamentos."
+    },
+    "m2-v-6": {
+      "file": "assets/audio/m2-v-6.mp3",
+      "text": "Vídeo. Medidas do posto e movimentos naturais."
+    },
+    "m2-compare-tronco": {
+      "file": "assets/audio/m2-compare-tronco.mp3",
+      "text": "Alcançar o produto: dois jeitos. Toque em cada lado para ver o que muda no corpo. Tronco torcido: Girar e esticar o tronco para alcançar o produto: evite a flexão e a torção do tronco. Na imagem: Operador torcendo o tronco para alcançar um produto longe. Tronco reto: Produto ao alcance, tronco reto: o movimento respeita o ângulo natural do corpo. Na imagem: Operador com o tronco reto, produto ao alcance dos braços."
+    },
+    "m2-v-7": {
+      "file": "assets/audio/m2-v-7.mp3",
+      "text": "Vídeo. Cadeira, apoio para os pés, esteira e mobiliário."
+    },
+    "m2-cadeira": {
+      "file": "assets/audio/m2-cadeira.mp3",
+      "text": "Cadeira, apoio, esteira e mobiliário. Cadeira de trabalho: Assento e encosto para apoio lombar, com estofamento de densidade adequada, ajustáveis à estatura do trabalhador e à tarefa. Na imagem: Cadeira de caixa com encosto lombar e regulagem de altura. Apoio para os pés: O apoio para os pés é independente da cadeira. Na imagem: Apoio para os pés no chão, sob o balcão. Esteira a partir de 2,70 m: Check outs com 2,70 m ou mais de comprimento devem ter esteira eletromecânica. Segundo o material, as lojas hoje não têm check out com esteira, porque têm menos de 2,70 m. Na imagem: Bancada de check out com régua de medir ao lado. Comunicação e mobiliário seguro: Deve haver comunicação com o pessoal de apoio e a supervisão. O mobiliário não tem quinas vivas nem rebarbas, e pregos, rebites e parafusos não podem causar acidentes. Na imagem: Quina arredondada do balcão e telefone de chamada."
+    },
+    "m2-v-8": {
+      "file": "assets/audio/m2-v-8.mp3",
+      "text": "Vídeo. Equipamentos e ferramentas do check out."
+    },
+    "m2-seu-checkout": {
+      "file": "assets/audio/m2-seu-checkout.mp3",
+      "text": "O que tem no seu check out."
+    },
+    "m2-v-9": {
+      "file": "assets/audio/m2-v-9.mp3",
+      "text": "Vídeo. Ambiente, temperatura e ajustes do posto."
+    },
+    "m2-quiz-intro": {
+      "file": "assets/audio/m2-quiz-intro.mp3",
+      "text": "Desafio, Monte o posto. Ligue cada item do posto de check out ao que a norma pede. Mínimo de 1 acerto para avançar."
+    },
+    "m2-match": {
+      "file": "assets/audio/m2-match.mp3",
+      "text": "Ligue o item do posto ao que a norma pede. Toque em um item e depois no que a norma pede para ele."
+    },
+    "m3-cover": {
+      "file": "assets/audio/m3-cover.mp3",
+      "text": "Módulo 3, Mercadorias e organização do trabalho. Como manusear mercadorias sem sobrecarga, o ensacamento, o fluxo de clientes, as pausas e os direitos do operador. Na imagem: Capa do Módulo 3: Mercadorias e organização do trabalho."
+    },
+    "m3-v-10": {
+      "file": "assets/audio/m3-v-10.mp3",
+      "text": "Vídeo. Manuseio de mercadorias e carrinhos."
+    },
+    "m3-v-11": {
+      "file": "assets/audio/m3-v-11.mp3",
+      "text": "Vídeo. O ensacamento."
+    },
+    "m3-ensacamento": {
+      "file": "assets/audio/m3-ensacamento.mp3",
+      "text": "O ensacamento. 1 ensacador a cada 3 check outs: No mínimo um ensacador a cada três check outs em funcionamento. Autoatendimento: O self check out facilita o ensacamento pelo próprio cliente. Não é rotina do operador: O ensacamento não pode virar parte do ciclo normal de trabalho do operador de check out."
+    },
+    "m3-v-12": {
+      "file": "assets/audio/m3-v-12.mp3",
+      "text": "Vídeo. Organização do atendimento."
+    },
+    "m3-v-13": {
+      "file": "assets/audio/m3-v-13.mp3",
+      "text": "Vídeo. Saídas do posto e o seu crachá."
+    },
+    "m3-direitos": {
+      "file": "assets/audio/m3-direitos.mp3",
+      "text": "Saídas do posto e seu crachá. Saídas do posto: O operador pode sair do posto a qualquer momento da jornada, avisando, para atender suas necessidades fisiológicas. Isso vale além do intervalo de refeição previsto na CLT. Na imagem: Operadora avisando a líder antes de deixar o posto. Seu nome no crachá: Todo trabalhador do check out usa um dispositivo de identificação visível, com nome e/ou sobrenome escolhido por ele mesmo. Na imagem: Close de um crachá no colete, com o nome visível."
+    },
+    "m3-quiz-intro": {
+      "file": "assets/audio/m3-quiz-intro.mp3",
+      "text": "Desafio, Faça ou evite. Classifique cada atitude: é o que se deve fazer ou o que se deve evitar no check out. Mínimo de 1 acerto para avançar."
+    },
+    "m3-sort": {
+      "file": "assets/audio/m3-sort.mp3",
+      "text": "Faça ou evite?. Um cartão por vez: escolha o grupo certo."
+    },
+    "m4-cover": {
+      "file": "assets/audio/m4-cover.mp3",
+      "text": "Módulo 4, Postura, LER/DORT e ginástica laboral. Os riscos da postura parada e do esforço repetitivo, a postura neutra e os alongamentos que você faz na cadeira e em pé. Na imagem: Capa do Módulo 4: Postura, LER/DORT e ginástica laboral."
+    },
+    "m4-v-14": {
+      "file": "assets/audio/m4-v-14.mp3",
+      "text": "Vídeo. Postura parada e o touch screen."
+    },
+    "m4-compare-braco": {
+      "file": "assets/audio/m4-compare-braco.mp3",
+      "text": "Braço elevado no touch screen. Toque em cada lado para ver o exemplo do material. Sem recuperar: Manter o mesmo braço elevado direto, sem tempo de recuperação, sobrecarrega o ombro. Na imagem: Operadora com o mesmo braço elevado no touch screen por muito tempo. 2 minutos e 8 minutos de recuperação: Elevar o braço por 2 minutos pede 8 minutos de recuperação. Faça a alteração dos braços. Na imagem: Operadora trocando o braço que usa no touch screen."
+    },
+    "m4-v-15": {
+      "file": "assets/audio/m4-v-15.mp3",
+      "text": "Vídeo. Efeitos da má postura e a postura neutra."
+    },
+    "m4-v-16": {
+      "file": "assets/audio/m4-v-16.mp3",
+      "text": "Vídeo. LER/DORT e os punhos no balcão de apoio."
+    },
+    "m4-compare-punhos": {
+      "file": "assets/audio/m4-compare-punhos.mp3",
+      "text": "Mouse e teclado no balcão de apoio. O balcão da liderança de caixa e o balcão do self check out têm digitação. Toque em cada lado. Punhos dobrados: A posição de flexão dos punhos ao usar mouse e teclado deve ser evitada. Na imagem: Mãos com os punhos dobrados para cima sobre o teclado. Punhos retos: Mantenha os punhos retos, alinhados com os antebraços, ao digitar. Na imagem: Mãos com os punhos retos sobre o teclado, com apoio de punho."
+    },
+    "m4-v-17": {
+      "file": "assets/audio/m4-v-17.mp3",
+      "text": "Vídeo. Alongamento: mãos, antebraços e braços."
+    },
+    "m4-maos-bracos": {
+      "file": "assets/audio/m4-maos-bracos.mp3",
+      "text": "Alongamento: mãos, antebraços e braços. Fechar e abrir a mão: Feche firmemente a mão e abra, esticando os dedos, ou 3. Na imagem: Mãos fechando firme e abrindo com os dedos esticados. Girar o punho: Gire o punho no sentido horário e no anti-horário, com os dedos relaxados, ou 3. Na imagem: Punho girando devagar com os dedos relaxados. Dedos entrelaçados: Entrelace os dedos e faça movimentos de onda. Depois gire os polegares nos dois sentidos, ou 3. Na imagem: Dedos entrelaçados fazendo movimento de onda. Antebraço: Estique o braço na altura abaixo do ombro, palma para fora (sinal de “pare”), e puxe a mão com a outra em direção ao corpo, 20 segundos, ou 3 (cada lado). Na imagem: Braço esticado à frente com a palma para fora, puxada pela outra mão. Cotovelo atrás da cabeça: Leve o cotovelo atrás da cabeça, em direção ao ombro oposto, e conduza para baixo com a outra mão, 20 segundos, ou 3 (cada braço). Na imagem: Cotovelo atrás da cabeça, conduzido pela mão oposta. Braços atrás do corpo: Com os braços atrás, entrelace os dedos e afaste os braços do corpo, dentro do seu limite, 20 segundos, ou 3. Na imagem: Braços atrás do corpo, dedos entrelaçados, afastados do corpo. Braços para cima: Estique os braços para cima, com os dedos entrelaçados e as palmas para o alto, 20 segundos. Na imagem: Braços esticados para cima com os dedos entrelaçados."
+    },
+    "m4-v-18": {
+      "file": "assets/audio/m4-v-18.mp3",
+      "text": "Vídeo. Alongamento: cabeça, pescoço e ombros."
+    },
+    "m4-pescoco": {
+      "file": "assets/audio/m4-pescoco.mp3",
+      "text": "Alongamento: cabeça, pescoço e ombros. Sim e não: Faça o sinal de “sim” e de “não” com a cabeça, devagar, com os ombros relaxados. Evite mover a cabeça para trás, porque pode comprimir os nervos, ou 3. Na imagem: Cabeça fazendo o sinal de sim e de não, devagar. Inclinar a cabeça: Incline a cabeça para o lado com a ajuda da mão do mesmo lado, 20 segundos, ou 3 (cada lado). Na imagem: Cabeça inclinada para o lado com a ajuda da mão. Ombros para cima: Inspire elevando os ombros como se fosse encostá-los nas orelhas e solte ao expirar, ou 3. Na imagem: Ombros subindo até as orelhas e soltando. Girar os ombros: Faça movimentos rotatórios dos ombros, da frente para trás e de trás para a frente, ou 3 (cada sentido). Na imagem: Ombros girando para a frente e para trás."
+    },
+    "m4-v-19": {
+      "file": "assets/audio/m4-v-19.mp3",
+      "text": "Vídeo. Alongamentos na cadeira."
+    },
+    "m4-cadeira": {
+      "file": "assets/audio/m4-cadeira.mp3",
+      "text": "Alongamentos na cadeira. Braços à frente: Entrelace os dedos e estique os braços à frente, por 10 a 20 segundos, 20 segundos, ou 2. Na imagem: Dedos entrelaçados e braços esticados à frente, sentado. Braços para cima: Estique os braços para cima, por 10 a 15 segundos, 15 segundos. Na imagem: Braços esticados para cima, sentado. Um braço sobe, o outro desce: Levante um braço e abaixe o outro, por 8 a 10 segundos de cada lado, 10 segundos, ou 2 (cada lado). Na imagem: Um braço levantado e o outro abaixado, sentado. Girar o tronco: Gire o tronco com suavidade, por 8 a 10 segundos para cada lado, 10 segundos, ou 2 (cada lado). Na imagem: Tronco girando suavemente para o lado, sentado. Abrir o peito: Apoie as costas no encosto, abra o peito e leve os ombros para trás, por 10 a 15 segundos, 15 segundos. Na imagem: Costas apoiadas no encosto, peito aberto e ombros para trás. Sacudir as mãos: Para terminar, sacuda as mãos, por 8 a 10 segundos, 10 segundos. Na imagem: Mãos sacudindo soltas, sentado."
+    },
+    "m4-v-20": {
+      "file": "assets/audio/m4-v-20.mp3",
+      "text": "Vídeo. Alongamentos em pé."
+    },
+    "m4-em-pe": {
+      "file": "assets/audio/m4-em-pe.mp3",
+      "text": "Alongamentos em pé. Braço atrás das costas: Leve o braço do relógio para trás das costas e incline a cabeça para o lado oposto, por 10 a 12 segundos. Troque de lado, 12 segundos, ou 2 (cada lado). Na imagem: Braço do relógio atrás das costas e cabeça inclinada para o lado oposto. Palmas unidas: Una as palmas das mãos na frente do peito e abaixe-as devagar, mantendo por 10 segundos, 10 segundos. Na imagem: Palmas das mãos unidas na frente do peito, descendo devagar. Dorso das mãos unido: Una o dorso das mãos, com os dedos para baixo, e mantenha por 10 segundos, 10 segundos. Na imagem: Dorso das mãos unidos, com os dedos para baixo."
+    },
+    "m4-v-21": {
+      "file": "assets/audio/m4-v-21.mp3",
+      "text": "Vídeo. Digitação: punhos retos no teclado e no mouse."
+    },
+    "m4-digitacao": {
+      "file": "assets/audio/m4-digitacao.mp3",
+      "text": "Digitação: punhos retos. Evite dobrar o punho: Dobrar o punho para cima, para baixo ou para os lados, ou digitar com as mãos tortas em relação ao antebraço, sobrecarrega o punho. Na imagem: Mãos digitando com o punho dobrado para cima, para baixo ou para o lado. Punho reto: Mantenha os dedos alinhados com o antebraço e deixe os antebraços na horizontal. Na imagem: Mãos digitando com os dedos alinhados ao antebraço, antebraços na horizontal. Apoio de punho: Use um apoio de punho de espuma à frente do teclado e do mouse. Na imagem: Apoio de punho de espuma na frente do teclado e do mouse."
+    },
+    "m4-quiz-intro": {
+      "file": "assets/audio/m4-quiz-intro.mp3",
+      "text": "Desafio, Complete a frase. Complete cada frase com a palavra certa sobre postura e alongamento. Mínimo de 2 acertos para avançar."
+    },
+    "m4-fill-1": {
+      "file": "assets/audio/m4-fill-1.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher as lacunas, na ordem."
+    },
+    "m4-fill-2": {
+      "file": "assets/audio/m4-fill-2.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher a lacuna."
+    },
+    "m4-fill-3": {
+      "file": "assets/audio/m4-fill-3.mp3",
+      "text": "Complete a frase. Toque nas palavras de baixo para preencher a lacuna."
+    },
+    "m5-cover": {
+      "file": "assets/audio/m5-cover.mp3",
+      "text": "Módulo 5, Revisão e duelo. Revisão dos quatro módulos e um duelo de certo ou errado para fechar o treinamento. Na imagem: Capa do Módulo 5: Revisão e duelo."
+    },
+    "m5-quiz-intro": {
+      "file": "assets/audio/m5-quiz-intro.mp3",
+      "text": "Desafio, Duelo do check out. Responda certo ou errado a cada afirmação sobre o check out e a ergonomia. Mínimo de 8 acertos para avançar."
+    },
+    "m5-d1": {
+      "file": "assets/audio/m5-d1.mp3",
+      "text": "A cadeira do check out precisa de apoio para os pés independente dela. Opção 1: Certo. Opção 2: Errado. Na imagem: Apoio para os pés."
+    },
+    "m5-d2": {
+      "file": "assets/audio/m5-d2.mp3",
+      "text": "O mobiliário do check out deve atender às medidas de apenas 50% dos trabalhadores. Opção 1: Certo. Opção 2: Errado. Na imagem: Medidas do mobiliário."
+    },
+    "m5-d3": {
+      "file": "assets/audio/m5-d3.mp3",
+      "text": "Flexão e torção do tronco devem ser incentivadas para alcançar o produto. Opção 1: Certo. Opção 2: Errado. Na imagem: Tronco reto."
+    },
+    "m5-d4": {
+      "file": "assets/audio/m5-d4.mp3",
+      "text": "Check outs com 2,70 m ou mais devem ter esteira eletromecânica. Opção 1: Certo. Opção 2: Errado. Na imagem: Esteira eletromecânica."
+    },
+    "m5-d5": {
+      "file": "assets/audio/m5-d5.mp3",
+      "text": "O mínimo é um ensacador a cada três check outs em funcionamento. Opção 1: Certo. Opção 2: Errado. Na imagem: Ensacador."
+    },
+    "m5-d6": {
+      "file": "assets/audio/m5-d6.mp3",
+      "text": "O operador só pode sair do posto no horário de refeição. Opção 1: Certo. Opção 2: Errado. Na imagem: Saída do posto."
+    },
+    "m5-d7": {
+      "file": "assets/audio/m5-d7.mp3",
+      "text": "A postura neutra ajuda a prevenir dores e LER/DORT. Opção 1: Certo. Opção 2: Errado. Na imagem: Postura neutra."
+    },
+    "m5-d8": {
+      "file": "assets/audio/m5-d8.mp3",
+      "text": "O crachá do operador deve trazer o nome escolhido por ele mesmo. Opção 1: Certo. Opção 2: Errado. Na imagem: Crachá."
+    },
+    "m5-d9": {
+      "file": "assets/audio/m5-d9.mp3",
+      "text": "O ar condicionado pode soprar direto no operador. Opção 1: Certo. Opção 2: Errado. Na imagem: Ar condicionado."
+    },
+    "m5-d10": {
+      "file": "assets/audio/m5-d10.mp3",
+      "text": "Cargas muito pesadas devem ser levantadas pelo operador sem ajuda. Opção 1: Certo. Opção 2: Errado. Na imagem: Cargas pesadas."
+    },
+    "m5-v-19": {
+      "file": "assets/audio/m5-v-19.mp3",
+      "text": "Vídeo. Encerramento."
+    },
+    "m5-finale": {
+      "file": "assets/audio/m5-finale.mp3",
+      "text": "Certificado de conclusão. Parabéns. Você concluiu o treinamento NR 17 – Ergonomia no check out. Pense na sua postura todos os dias. Na imagem: Capa de parabéns, conclusão do treinamento."
+    }
+  }
+}

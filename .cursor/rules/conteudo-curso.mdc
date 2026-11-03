@@ -1,0 +1,20 @@
+---
+description: Convenções do conteúdo do treinamento NR 17 Check Out
+globs: "{question-screen-data.js,question-screen.js,sessao-aprender.html}"
+alwaysApply: false
+---
+
+# Conteúdo do curso
+
+## Arquivos
+
+- Conteúdo das telas: `question-screen-data.js`
+- UI / layouts: `question-screen.js` + CSS
+- Navegação / progresso: `sessao-aprender.html`
+
+## Ao editar conteúdo
+
+- Preferir helpers (`cover`, `video`, `intro`, `q`, `fill`, …) em vez de objetos soltos
+- Fotos em `assets/fotos/` com os nomes do roteiro (`pNN.k.png`, `capamoduloN.png`, etc.)
+- Telas com gate (vídeo com embed, acordeão, passos, quiz) só liberam a seta depois de concluir
+- Overflow: encolher conteúdo interno — **nunca** mudar o tamanho do `.qs-shell` (ver regra do formato da tela)

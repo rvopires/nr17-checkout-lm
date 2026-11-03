@@ -1,0 +1,90 @@
+/* Menu de módulos compacto — tudo visível, sem rolar. Só CSS, nenhum texto muda.
+   Carregado depois de question-screen.css e fundo-novo.css. */
+
+.qs-menu { padding: 20px 20px 16px; }
+.qs-menu h1 { margin: 0 0 4px; }
+.qs-menu > p,
+.qs-menu-lead { margin: 0 0 12px; }
+.qs-start-callout { margin: 0 0 12px; padding: 11px 16px; gap: 3px; }
+
+/* colunas automáticas pela largura real do cartão (~880px → 4 colunas: 4 + 3 módulos) */
+.qs-mod-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+/* card: número + título na mesma linha; status embaixo */
+.qs-mod-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "num    title"
+    "status status";
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: start;
+  min-height: 0;
+  padding: 14px 14px 12px 16px;
+}
+.qs-mod-card.is-open {
+  padding-left: 18px;
+}
+.qs-mod-card .qs-mod-num { grid-area: num; margin: 0; }
+.qs-mod-card .qs-mod-title {
+  grid-area: title;
+  align-self: center;
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+.qs-mod-card .qs-mod-meta { display: none; }
+.qs-mod-card .qs-go,
+.qs-mod-card .qs-lock,
+.qs-mod-card .qs-done {
+  grid-area: status;
+  align-self: end;
+  margin-top: 0;
+  padding-top: 0;
+  width: fit-content;
+}
+
+/* janela baixa (notebook com barra do navegador): versão mais enxuta */
+@media (max-height: 679px) {
+  .qs-menu { padding: 14px 18px 12px; }
+  .qs-menu h1 { margin: 0 0 2px; }
+  .qs-menu > p,
+  .qs-menu-lead { margin: 0 0 8px; }
+  .qs-start-callout { margin: 0 0 8px; padding: 8px 14px; gap: 2px; }
+  .qs-mod-grid { gap: 8px; }
+  .qs-mod-card { padding: 9px 11px; column-gap: 9px; }
+  .qs-mod-card .qs-mod-num { width: 26px; height: 26px; font-size: 0.8rem; }
+  .qs-mod-card .qs-mod-title { font-size: 0.84rem; line-height: 1.22; }
+  .qs-mod-card .qs-mod-meta { display: none; }
+}
+
+/* celular: uma coluna; 1ª linha = número + título + status */
+@media (max-width: 599px) {
+  .qs-menu { padding: 16px 14px 12px; }
+  .qs-mod-grid { gap: 8px; }
+  .qs-mod-card {
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "num  title status";
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 0;
+    padding: 10px 12px;
+  }
+  .qs-mod-card .qs-mod-title { align-self: center; }
+  .qs-mod-card .qs-mod-meta { display: none; }
+  .qs-mod-card .qs-go,
+  .qs-mod-card .qs-lock,
+  .qs-mod-card .qs-done { align-self: center; padding-top: 0; }
+}
+
+/* 6 módulos: 3 em cima e 3 embaixo (no celular segue em uma coluna) */
+@media (min-width: 600px) {
+  .qs-mod-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

@@ -1,0 +1,23 @@
+/* Fundo novo — degradê berinjela e lima (NR 17).
+   Carregado depois de question-screen.css. Para voltar ao visual antigo, remova o <link> dele. */
+
+/* Fundo em degradê: azul-marinho de um lado e laranja do outro (as duas cores principais do curso). */
+.qs-app { background: linear-gradient(135deg, #1d0b33 0%, #2a1245 28%, #3a1d5c 46%, #573282 72%, #c8f31d 100%); }
+
+/* remove as decorações do fundo antigo (listras, brilho e onda amarela) */
+.qs-app::before,
+.qs-app::after { display: none; }
+.qs-app > .qs-wave-session { display: none !important; }
+
+/* o botão amarelo "ver mais" tinha sombra vermelha (sobra do tema antigo) */
+.qs-more {
+  box-shadow:
+    0 8px 20px rgba(90, 110, 30, 0.36),
+    0 0 0 4px rgba(255, 255, 255, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* sombra discreta pro cartão branco "descolar" do fundo */
+.qs-screen {
+  box-shadow: 0 24px 60px rgba(14,5,26, 0.4);
+}

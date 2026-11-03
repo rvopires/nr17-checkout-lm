@@ -1,0 +1,146 @@
+/* ==========================================================================
+   Celular — só vale em telas estreitas (≤ 760px). Nada aqui afeta o computador.
+   Carregado por último. Ideia: o cartão usa a largura toda do aparelho e as setas
+   descem para uma barra embaixo (antes ficavam nas laterais e roubavam ~90px).
+   ========================================================================== */
+@media (max-width: 760px) {
+  .qs-app:not(.is-home) { height: 100dvh; min-height: 0; }
+
+  /* estágio: cartão em cima (ocupa tudo), setas embaixo lado a lado */
+  .qs-app:not(.is-home) .qs-stage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
+    column-gap: 12px;
+    row-gap: 10px;
+    align-items: stretch;
+    justify-items: stretch;
+    padding: 4px 10px max(12px, env(safe-area-inset-bottom));
+  }
+  .qs-app:not(.is-home) .qs-stage > .qs-col {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    min-height: 0;
+  }
+  .qs-app:not(.is-home) .qs-stage > #btnBack { grid-column: 1; grid-row: 2; }
+  .qs-app:not(.is-home) .qs-stage > #btnFwd { grid-column: 2; grid-row: 2; }
+  .qs-app:not(.is-home) .qs-stage > .qs-nav {
+    width: 100%;
+    height: 48px;
+    border-radius: 999px;
+  }
+  .qs-app:not(.is-home) .qs-stage > .qs-nav svg { width: 22px; height: 22px; }
+}
+
+@media (max-width: 760px) {
+  /* setas: voltar translúcida, avançar laranja (ação principal) */
+  .qs-app:not(.is-home) .qs-stage > #btnBack { background: rgba(255, 255, 255, .16); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .35); }
+  .qs-app:not(.is-home) .qs-stage > #btnFwd { background: #c8f31d; box-shadow: 0 5px 0 rgba(20, 80, 42, .45); }
+  .qs-app:not(.is-home) .qs-stage > .qs-nav:disabled { opacity: .35; box-shadow: none; }
+
+  /* letras miúdas: piso de ~13px */
+  .qs-video-pill, .qs-steps-count, .qs-match-col-title, .qs-match-item, .qs-deck-name { font-size: max(13px, 1em); }
+  .qs-finale-chip, .qs-finale-eyebrow { font-size: 12px; }
+  .qs-finale-medal-name, .qs-finale-hits, .qs-finale-body { font-size: 13.5px; }
+  .qs-mod-card .qs-go, .qs-mod-card .qs-lock, .qs-mod-card .qs-done { font-size: 13px; }
+  .qs-card-lead { font-size: 12.5px; }
+  .qs-zn-tag { font-size: 13px; }
+
+  /* Objetivos (faixa + lista): vira cartão empilhado — etiqueta e título em cima, frase embaixo */
+  .qs-banner ~ .qs-cards.is-agents .qs-card,
+  .qs-banner ~ .qs-cards.is-agents.count-5 .qs-card:last-child { flex-direction: column; align-items: stretch; }
+  .qs-banner ~ .qs-cards.is-agents .qs-card-top { flex: 0 0 auto; padding: 10px 14px 0; }
+  .qs-banner ~ .qs-cards.is-agents .qs-card-head { flex-wrap: wrap; gap: 4px 10px; }
+  .qs-banner ~ .qs-cards.is-agents .qs-card h3 { font-size: 16px; }
+  .qs-banner ~ .qs-cards.is-agents .qs-card p { padding: 4px 14px 11px; font-size: 14.5px; }
+  .qs-banner { width: 100%; }
+}
+
+@media (max-width: 760px) {
+  /* mais letras legíveis (peso de especificidade para vencer as regras antigas) */
+  .qs-app .qs-card > p { font-size: 14px; }
+  .qs-app .qs-card-head > .qs-card-lead { font-size: 12.5px; }
+  .qs-app .qs-card-head > h3 { font-size: 15px; }
+  .qs-app .qs-deck-tab .qs-deck-name { font-size: 13.5px; }
+  .qs-app .qs-match-item { font-size: 13.5px; }
+  .qs-app .qs-match-hud > span { font-size: 13.5px; }
+  .qs-app .qs-mod-card .qs-mod-num { font-size: 13px; }
+  .qs-app .qs-dst-txt > b { font-size: 13.5px; }
+  .qs-app .qs-zn-photo > .qs-zn-tag { font-size: 13px; }
+  .qs-app .qs-finale-score small { font-size: 12px; }
+
+  /* "Vamos ao desafio": nunca corta, rola se o aparelho for baixo */
+  .qs-app .qs-quiz-intro { overflow-y: auto; justify-content: safe center; -webkit-overflow-scrolling: touch; }
+}
+@media (max-width: 760px) and (max-height: 700px) {
+  .qs-app .qs-quiz-intro { padding: 18px 16px 20px; }
+  .qs-app .qs-quiz-intro-icon { width: 56px; height: 56px; font-size: 26px; margin-bottom: 10px; }
+  .qs-app .qs-quiz-intro-btn { min-height: 48px; padding: 11px 24px; }
+}
+
+/* Onde nunca estacionar (cartões com foto): no celular vira lista — foto inteira à esquerda, texto à direita */
+@media (max-width: 760px) {
+  .qs-app .qs-screen.is-single .qs-zn-grid { grid-template-columns: 1fr; max-width: 100%; gap: 10px; }
+  .qs-app .qs-screen.is-single .qs-zn-card { flex-direction: row; align-items: stretch; border-radius: 16px; }
+  .qs-app .qs-screen.is-single .qs-zn-photo { flex: 0 0 96px; width: 96px; aspect-ratio: 4 / 5; }
+  .qs-app .qs-screen.is-single .qs-zn-tag { display: none; }
+  .qs-app .qs-screen.is-single .qs-zn-seal { display: none; }
+  .qs-app .qs-screen.is-single .qs-zn-info { padding: 10px 14px 12px 12px; align-items: flex-start; justify-content: center; text-align: left; gap: 3px; }
+  .qs-app .qs-screen.is-single .qs-zn-info > h3 { margin-top: 0; font-size: 16px; }
+  .qs-app .qs-screen.is-single .qs-zn-info > p { margin-bottom: 0; font-size: 14.5px; line-height: 1.32; }
+  .qs-app .qs-screen.is-single .qs-zn-card .qs-zoom-mini { width: 26px; height: 26px; right: 4px; bottom: 4px; }
+}
+
+/* Manuais e SESMT (layout "caminho") no celular: cartões empilhados, altura pelo conteúdo */
+@media (max-width: 760px) {
+  .qs-app .qs-screen.is-cm .qs-cm { height: auto; gap: 12px; }
+  .qs-app .qs-screen.is-cm .qs-cm-manuals { flex: 0 0 auto; grid-template-columns: 1fr; gap: 12px; }
+  .qs-app .qs-screen.is-cm .qs-cm-card.is-manual { min-height: 0; padding-bottom: 14px; }
+  .qs-app .qs-screen.is-cm .qs-cm-card.is-manual .qs-cm-ctxt { flex: 0 0 auto; }
+  .qs-app .qs-screen.is-cm .qs-cm-card.is-mail { flex: 0 0 auto; flex-wrap: wrap; justify-content: center; text-align: center; padding: 12px 16px 14px; gap: 8px 12px; }
+  .qs-app .qs-screen.is-cm .qs-cm-card.is-mail .qs-cm-ctxt { flex: 1 1 180px; }
+  .qs-app .qs-screen.is-cm .qs-cm-mail { word-break: normal; overflow-wrap: anywhere; font-size: 1.05rem; display: block; }
+  .qs-app .qs-screen.is-cm .qs-cm-copy,
+  .qs-app .qs-screen.is-cm .qs-cm-open { width: 100%; justify-content: center; min-height: 46px; }
+}
+
+/* Menu de módulos em aparelhos estreitos: número + título na 1ª linha (título com a largura toda), botão embaixo */
+@media (max-width: 440px) {
+  .qs-menu .qs-mod-card {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "num    title"
+      "status status";
+    row-gap: 8px;
+    padding: 10px 12px 10px;
+  }
+  .qs-menu .qs-mod-card .qs-go,
+  .qs-menu .qs-mod-card .qs-lock,
+  .qs-menu .qs-mod-card .qs-done { justify-self: start; align-self: center; }
+}
+
+/* piso de legibilidade no celular (vence regras antigas de telas baixas) */
+@media (max-width: 760px) {
+  .qs-app .qs-card h3,
+  .qs-app .qs-card-head h3 { font-size: 15px !important; }
+  .qs-app .qs-card-head .qs-card-lead { font-size: 13px !important; }
+  .qs-app .qs-card > p { font-size: 14px !important; }
+  .qs-app .qs-match-item,
+  .qs-app .qs-match-col-title { font-size: 13.5px !important; }
+}
+
+/* Parabéns: o cartão cresce com o conteúdo (antes cortava a frase e as etiquetas) e a tela rola se preciso */
+@media (max-width: 760px) {
+  .qs-app .qs-screen .qs-finale-inner { overflow-y: auto; justify-content: safe center; -webkit-overflow-scrolling: touch; }
+  .qs-app .qs-screen .qs-finale-card { height: auto !important; max-height: none !important; overflow: hidden; flex: 0 0 auto; }
+}
+
+/* Perguntas: a imagem (sempre 2:1) aparece inteira, sem cortar as laterais; o resto da tela fica para pergunta e respostas */
+@media (max-width: 760px) {
+  .qs-app .qs-screen.is-question .qs-media-hero { flex: 0 0 auto; width: 100%; aspect-ratio: 2 / 1; min-height: 0; }
+  .qs-app .qs-screen.is-question .qs-img,
+  .qs-app .qs-screen.is-question .qs-img-contain { object-fit: contain; object-position: 50% 50%; animation: none; transform: none; }
+}

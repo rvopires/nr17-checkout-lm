@@ -1,0 +1,27 @@
+---
+description: Narração TTS — gerar áudios e nunca expor token
+globs: "{narration.js,narration-text.js,generate-audios.js,assets/audio/**}"
+alwaysApply: false
+---
+
+# Narração (TTS)
+
+Áudios pré-gerados em `assets/audio/`. O navegador toca mp3 (`mode: 'cached'`); não chama a API no front.
+
+## Gerar áudios
+
+No PowerShell, na pasta do projeto:
+
+```powershell
+$env:TTS_TOKEN = "seu-bearer-token"
+node generate-audios.js
+```
+
+Só algumas telas: `node generate-audios.js m1-cover m1-q1`
+
+## Regras
+
+- **Nunca** commitar Bearer token, usuário ou senha no código, HTML ou `localStorage` de exemplo
+- Texto da narração vive em `narration-text.js` (mesmo texto no gerador e no player)
+- Se o texto da tela mudar, regerar o mp3 (o manifest detecta mudança) ou usar `--force`
+- Abrertura/menu também precisam de áudio (`home`, `menu-1`…`menu-done`) para o botão Transcrição funcionar

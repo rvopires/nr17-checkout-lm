@@ -1,0 +1,94 @@
+/* Capa animada — NR 17 Ergonomia no check out.
+   Sobre a imagem de fundo (assets/fotos/capa-fundo.png, 1672×941) o HTML anima:
+   1) a tela branca do monitor do cliente "registra" o curso: os cinco itens entram um a um, com um bip,
+      e fecha com "Corpo protegido";
+   2) o leitor plano da bancada pulsa em verde a cada bip.
+   Posições = % da imagem; a camada acompanha o mesmo enquadramento da foto (cover, alinhada à direita).
+   Para desfazer: remova o <link> deste arquivo e o <script> capa-animada.js do sessao-aprender.html. */
+.qs-fx { position: absolute; pointer-events: none; overflow: hidden; --u: 1px; font-family: "Montserrat", "Open Sans", sans-serif; }
+
+/* tela do monitor (fração da imagem: x 83,7 %–98,8 %, y 36,6 %–57,7 %) */
+.qs-fx-tela {
+  position: absolute; left: 83.73%; top: 36.56%; width: 15.07%; height: 21.1%;
+  background: #fff; border-radius: calc(var(--u) * 3); overflow: hidden;
+  display: flex; flex-direction: column; color: #2a1245;
+}
+.qs-fx-top {
+  flex: none; height: 17%; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 calc(var(--u) * 10); background: #78be20; color: #fff;
+  font-weight: 800; font-size: calc(var(--u) * 12); letter-spacing: .06em;
+}
+.qs-fx-top b { font-weight: 800; }
+.qs-fx-body { position: relative; flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 calc(var(--u) * 10); }
+.qs-fx-item {
+  display: flex; align-items: center; gap: calc(var(--u) * 10);
+  font-weight: 800; font-size: calc(var(--u) * 24); line-height: 1.1;
+  opacity: 0; transform: translateX(calc(var(--u) * 26));
+  transition: opacity .25s ease, transform .35s cubic-bezier(.2, 1.3, .4, 1);
+}
+.qs-fx-item.is-on { opacity: 1; transform: none; }
+.qs-fx-item .ck {
+  flex: none; width: calc(var(--u) * 32); height: calc(var(--u) * 32); border-radius: 50%;
+  background: #78be20; color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: calc(var(--u) * 22); font-weight: 900;
+}
+.qs-fx-item.is-on .ck { animation: qsFxPop .45s cubic-bezier(.2, 1.6, .4, 1); }
+@keyframes qsFxPop { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+.qs-fx-dots { flex: none; height: 16%; display: flex; align-items: center; justify-content: center; gap: calc(var(--u) * 9); }
+.qs-fx-dots i { width: calc(var(--u) * 11); height: calc(var(--u) * 11); border-radius: 50%; background: #d9e6cc; transition: background .25s ease, transform .3s ease; }
+.qs-fx-dots i.on { background: #78be20; transform: scale(1.15); }
+/* fechamento: a tela vira verde com "Corpo protegido" */
+.qs-fx-tela.is-total .qs-fx-body { background: #78be20; color: #fff; animation: qsFxFlash .6s ease-out; }
+.qs-fx-tela.is-total .qs-fx-item .ck { background: #fff; color: #78be20; }
+.qs-fx-tela.is-total .qs-fx-dots i { background: #78be20; }
+@keyframes qsFxFlash { 0% { filter: brightness(1.5); } 100% { filter: none; } }
+
+/* leitor plano da bancada (fração da imagem: x 74,6 %–89,7 %, y 69,7 %–72,8 %) */
+.qs-fx-bip {
+  position: absolute; left: 74.6%; top: 69.7%; width: 15.1%; height: 3.1%; border-radius: calc(var(--u) * 3);
+  background: rgba(120, 190, 32, 0); box-shadow: 0 0 0 rgba(120, 190, 32, 0);
+}
+.qs-fx-bip.is-on { animation: qsFxBip .55s ease-out; }
+@keyframes qsFxBip {
+  0% { background: rgba(200, 243, 29, .95); box-shadow: 0 0 calc(var(--u) * 26) calc(var(--u) * 10) rgba(200, 243, 29, .85); }
+  100% { background: rgba(120, 190, 32, 0); box-shadow: 0 0 0 0 rgba(200, 243, 29, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qs-fx-item, .qs-fx-dots i { transition: none; }
+  .qs-fx-item.is-on .ck, .qs-fx-bip.is-on, .qs-fx-tela.is-total .qs-fx-body { animation: none; }
+}
+
+
+/* maquininha de cartão (fração da imagem: x 93,0 %–96,4 %, y 62,6 %–64,7 %): a telinha acende "aprovado" quando o cupom fecha */
+.qs-fx-maq {
+  position: absolute; left: 92.95%; top: 62.6%; width: 3.45%; height: 2.1%;
+  clip-path: polygon(46.6% 0, 100% 5%, 74% 100%, 0 85%);
+  background: rgba(120, 190, 32, 0); display: flex; align-items: center; justify-content: center;
+  transition: background .25s ease;
+}
+.qs-fx-maq span { color: #fff; font-weight: 900; font-size: calc(var(--u) * 15); line-height: 1; opacity: 0; transform: scale(.4); transition: opacity .2s ease, transform .35s cubic-bezier(.2, 1.6, .4, 1); }
+.qs-fx-maq.is-ok { background: rgba(120, 190, 32, .95); animation: qsFxMaq 1.1s ease-in-out 2; }
+.qs-fx-maq.is-ok span { opacity: 1; transform: none; }
+@keyframes qsFxMaq { 0%, 100% { filter: none; } 50% { filter: brightness(1.45) drop-shadow(0 0 calc(var(--u) * 10) #c8f31d); } }
+
+/* brilho que pulsa atrás do triângulo da logo na parede (fração da imagem: x 67,6 %–77,2 %, y 5,3 %–21,2 %) */
+.qs-fx-glow {
+  position: absolute; left: 66.6%; top: 3.5%; width: 11.6%; height: 19.5%; border-radius: 50%;
+  background: radial-gradient(circle, rgba(200, 243, 29, .5) 0%, rgba(200, 243, 29, .18) 45%, rgba(200, 243, 29, 0) 70%);
+  mix-blend-mode: multiply; opacity: 0; animation: qsFxGlow 5.2s ease-in-out infinite;
+}
+@keyframes qsFxGlow { 0%, 100% { opacity: 0; transform: scale(.9); } 40%, 60% { opacity: .85; transform: scale(1.08); } }
+@media (prefers-reduced-motion: reduce) { .qs-fx-maq.is-ok, .qs-fx-glow { animation: none; } .qs-fx-glow { opacity: .4; } .qs-fx-maq, .qs-fx-maq span { transition: none; } }
+
+
+/* confete (nasce no centro da tela do monitor) */
+.qs-fx-cf {
+  position: absolute; left: 91.3%; top: 46.6%; width: calc(var(--u) * 9); height: calc(var(--u) * 14); border-radius: 2px;
+  opacity: 0; animation: qsFxCf 1.4s cubic-bezier(.15, .7, .3, 1) forwards;
+}
+@keyframes qsFxCf {
+  0% { opacity: 1; transform: translate(0, 0) rotate(0) scale(.6); }
+  70% { opacity: 1; }
+  100% { opacity: 0; transform: translate(calc(var(--u) * var(--dx)), calc(var(--u) * var(--dy))) rotate(var(--rot)) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) { .qs-fx-cf { display: none; } }

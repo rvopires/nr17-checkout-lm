@@ -1,0 +1,27 @@
+---
+description: Como ligar vídeos Panda nas telas do curso
+globs: question-screen-data.js
+alwaysApply: false
+---
+
+# Vídeos Panda
+
+Telas `type: "video"` usam o helper `video(...)` em `question-screen-data.js`.
+
+## Como adicionar
+
+Passe o UUID do Panda como **7º argumento**:
+
+```js
+video('m2-v-epis', 'EPIs do operador', '0:30', scene, brief, body,
+  'a06f6f6b-dd3d-43f3-9d2c-792a6fc6a9dd')
+```
+
+Isso preenche `embed` + `playerId` (`panda-{uuid}`). A base do player já está em `PANDA`.
+
+## Regras
+
+- Um UUID por tela — não reutilizar o mesmo vídeo em temas diferentes
+- Manter a ordem das telas de vídeo do curso (M1 → M5)
+- Não colar o iframe HTML inteiro no data; só o UUID
+- Conferir se o tema do vídeo bate com o título/cena da tela

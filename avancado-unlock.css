@@ -1,0 +1,258 @@
+/* ==========================================================================
+   SELO "BEM-VINDO AO NÍVEL AVANÇADO" — só no Avançado
+   Aparece por cima de tudo assim que a página abre, na primeira vez da
+   sessão (ver o script no fim do sessao-aprender.html), some sozinho depois
+   de alguns segundos ou no toque, revelando a capa de sempre por baixo.
+   Reusa a linguagem visual do selo de título desbloqueado que já aparece
+   quando a pessoa passa num desafio (qsMedalPop, dourado) — mesma família
+   visual, só que em tela cheia e uma vez só, no começo do curso.
+   ========================================================================== */
+.qs-unlock {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 32px;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 38%, rgba(200,243,29, 0.16) 0%, transparent 60%),
+    linear-gradient(165deg, #1d0b33 0%, #150826 60%, #080F1C 100%);
+  cursor: pointer;
+  animation: qsUnlockIn 0.5s ease both;
+}
+.qs-unlock[hidden] { display: none !important; }
+.qs-unlock.is-leaving { animation: qsUnlockOut 0.55s ease both; pointer-events: none; }
+
+.qs-unlock-badge {
+  width: 128px;
+  height: 128px;
+  margin-bottom: 6px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 30%, #fff 0%, transparent 30%),
+    linear-gradient(145deg, #d4f84a, #9fc914 55%, #3a1d5c 130%);
+  box-shadow:
+    0 0 0 10px rgba(200,243,29, 0.16),
+    0 18px 40px rgba(0, 0, 0, 0.45);
+  animation: qsUnlockBadgePop 0.8s cubic-bezier(0.2, 1.4, 0.4, 1) 0.15s both,
+             qsUnlockBadgeGlow 2.2s ease-in-out 1s infinite;
+}
+.qs-unlock-badge-face {
+  font-size: 3.6rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+.qs-unlock-tag {
+  font-family: var(--qs-font-h, 'Montserrat', sans-serif);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #c8f31d;
+  opacity: 0;
+  animation: qsUnlockFadeUp 0.5s ease 0.55s both;
+}
+.qs-unlock-title {
+  font-family: var(--qs-font-h, 'Montserrat', sans-serif);
+  font-weight: 900;
+  font-size: clamp(1.7rem, 5vw, 2.6rem);
+  line-height: 1.12;
+  color: #fdf8ea;
+  margin: 4px 0 2px;
+  opacity: 0;
+  animation: qsUnlockFadeUp 0.55s ease 0.68s both;
+}
+.qs-unlock-sub {
+  font-family: var(--qs-font-b, 'Open Sans', sans-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  color: #FFD4C4;
+  max-width: 46ch;
+  margin: 0 0 20px;
+  opacity: 0;
+  animation: qsUnlockFadeUp 0.55s ease 0.85s both;
+}
+.qs-unlock-skip {
+  font-family: var(--qs-font-h, 'Montserrat', sans-serif);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: rgba(253, 248, 234, 0.65);
+  background: transparent;
+  border: 1.5px solid rgba(200,243,29, 0.4);
+  border-radius: 999px;
+  padding: 10px 22px;
+  cursor: pointer;
+  opacity: 0;
+  animation: qsUnlockFadeUp 0.55s ease 1.05s both;
+}
+.qs-unlock-skip:hover { border-color: #c8f31d; color: #fdf8ea; }
+
+@keyframes qsUnlockIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes qsUnlockOut { to { opacity: 0; } }
+@keyframes qsUnlockBadgePop {
+  from { transform: scale(0.4) rotate(-14deg); opacity: 0; }
+  70%  { transform: scale(1.12) rotate(4deg); opacity: 1; }
+  to   { transform: scale(1) rotate(0); opacity: 1; }
+}
+@keyframes qsUnlockBadgeGlow {
+  0%, 100% { box-shadow: 0 0 0 10px rgba(200,243,29, 0.16), 0 18px 40px rgba(0, 0, 0, 0.45); }
+  50%      { box-shadow: 0 0 0 16px rgba(200,243,29, 0.26), 0 18px 44px rgba(0, 0, 0, 0.5); }
+}
+@keyframes qsUnlockFadeUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 599px) {
+  .qs-unlock-badge { width: 104px; height: 104px; }
+  .qs-unlock-badge-face { font-size: 3rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qs-unlock, .qs-unlock-badge, .qs-unlock-tag, .qs-unlock-title, .qs-unlock-sub, .qs-unlock-skip {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Espaço de imagem ainda sem foto: mantém o tamanho e some com os pontos animados da capa */
+.capa-sem-foto .qs-fx { display: none !important; }
+img.is-ph { object-fit: cover; background: #2a1245; }
+
+/* Layout "resp" com 3 ou 5 cartões (o original só previa 4) */
+.qs-screen.is-resp .qs-cards.count-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); max-width: 900px; }
+.qs-screen.is-resp .qs-cards.count-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(10px, 1.3vw, 16px); max-width: 1120px; }
+.qs-screen.is-resp .qs-cards.count-5 .qs-card { padding-left: 8px; padding-right: 8px; }
+.qs-screen.is-resp .qs-cards.count-5 .qs-card h3 { font-size: clamp(0.82rem, 1.15vw, 0.98rem); }
+.qs-screen.is-resp .qs-cards.count-5 .qs-card > p { font-size: clamp(0.72rem, 0.95vw, 0.84rem); line-height: 1.3; }
+.qs-screen.is-resp .qs-cards.count-5::before { left: 8%; right: 8%; }
+
+/* Duelo (sim ou não) sem foto: os dois botões ficam grandes e no meio da tela */
+.qs-screen.is-question.no-photo .qs-opts.count-2 { align-content: center; grid-auto-rows: clamp(110px, 24vh, 180px); gap: clamp(14px, 2vw, 24px); }
+.qs-screen.is-question.no-photo .qs-opts.count-2 .qs-opt { font-size: clamp(1.15rem, 2vw, 1.6rem); justify-content: center; }
+
+/* Telas de texto cheias (cartões + aviso): um pouco menos de margem em cima e embaixo para caber sem rolar */
+.qs-screen.is-text.is-duo .qs-panel-text,
+.qs-screen.is-text.is-resp .qs-panel-text { padding-top: 16px; padding-bottom: 10px; }
+
+/* ── ajustes de altura: páginas com foto não podem sair do cartão em telas baixas ── */
+/* lista com foto grande: só a regra aberta mostra o texto; as outras ficam em uma linha */
+.qs-lf-row { flex: 1 1 0; min-height: 0; }
+.qs-lf-row.is-on { flex: 2.6 1 0; }
+.qs-lf-row:not(.is-on) .qs-lf-copy span { display: none; }
+.qs-lf-row:not(.is-on) .qs-lf-copy { justify-content: center; }
+/* duas fotos + aviso (página 7): em telas baixas a foto vira faixa mais baixa, sem sair do cartão */
+@media (max-height: 800px) {
+  .qs-screen.is-duo .qs-cards, .qs-screen.is-duo .qs-items { max-width: 940px; }
+  .qs-screen.is-duo .qs-thumb { display: block; width: 100%; aspect-ratio: auto; height: 19dvh; max-height: none; }
+  .qs-screen.is-duo .qs-thumb .qs-zoom-wrap { position: absolute; inset: 0; }
+  .qs-screen.is-duo .qs-thumb img { object-fit: cover; object-position: center; }
+  .qs-screen.is-duo .qs-title { margin-bottom: 6px; }
+  .qs-screen.is-duo .qs-cards { margin-bottom: 8px; }
+  .qs-screen.is-duo .qs-card h3 { font-size: 1.15rem; }
+  .qs-screen.is-duo .qs-card > p { font-size: .95rem; line-height: 1.3; }
+  .qs-screen.is-duo .qs-item-ico { font-size: 1.8rem; }
+  .qs-screen.is-duo .qs-item p { font-size: .95rem; line-height: 1.3; }
+}
+
+/* ── cartões de foto com 3 colunas (ex.: ABNT e outras): foto mais larga que alta, para o texto caber sem rolar ── */
+.qs-screen.is-zonas.is-single.zn-cols-3 .qs-zn-photo { aspect-ratio: 4 / 3; }
+.qs-screen.is-zonas.is-single.zn-cols-3 .qs-zn-info p { font-size: .98rem; line-height: 1.32; }
+
+/* ── passos com foto ao lado do texto (páginas "Comando, cabo e aterramento", "Foco no trabalho" e "Passos a serem seguidos"):
+   a foto preenche o quadro (sem faixas brancas) e o texto fica à direita, maior ── */
+.qs-screen.is-equip-steps.is-side-steps .qs-steps-track { height: auto; min-height: 0; flex: 1 1 auto; }
+.qs-screen.is-equip-steps.is-side-steps .qs-step.is-text {
+  flex-direction: row; align-items: center; justify-content: center;
+  gap: clamp(18px, 3vw, 36px); height: auto; min-height: 0; padding: 0 4px;
+}
+.qs-screen.is-equip-steps.is-side-steps .qs-step.has-photo .qs-step-media {
+  height: 100%; max-height: 400px; width: auto; max-width: 62%; aspect-ratio: var(--side-r, 1);
+  border-radius: 22px; background: #efe9f7; box-shadow: 0 14px 34px rgba(22,8,40, .22);
+}
+.qs-screen.is-equip-steps.is-side-steps .qs-step.has-photo .qs-step-img { object-fit: cover; object-position: center; background: transparent; }
+.qs-screen.is-equip-steps.is-side-steps .qs-step-info {
+  width: auto; max-width: min(430px, 42%); min-height: 0; margin: 0; padding: 0; text-align: left; flex: 1 1 auto;
+}
+.qs-screen.is-equip-steps.is-side-steps .qs-step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.qs-screen.is-equip-steps.is-side-steps .qs-step-title { display: block; margin: 0; font-size: clamp(1.25rem, 2.7vh, 1.7rem); line-height: 1.2; }
+.qs-screen.is-equip-steps.is-side-steps .qs-step-title::after { content: none; }
+.qs-screen.is-equip-steps.is-side-steps .qs-step-move { display: block; font-size: clamp(1rem, 2.1vh, 1.2rem); line-height: 1.5; margin: 0; }
+.qs-screen.is-equip-steps.is-side-steps .qs-step-media .qs-steps-count { display: none; }
+@media (max-width: 760px) {
+  .qs-screen.is-equip-steps.is-side-steps .qs-step.is-text { flex-direction: column; justify-content: flex-start; gap: 12px; }
+  .qs-screen.is-equip-steps.is-side-steps .qs-step.has-photo .qs-step-media { height: auto; width: 100%; max-width: 100%; max-height: 42dvh; }
+  .qs-screen.is-equip-steps.is-side-steps .qs-step-info { max-width: 100%; }
+}
+
+/* ── 5 cartões de foto lado a lado (ex.: EPIs do operador): uma fileira só, foto grande e nome embaixo ── */
+.qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: clamp(8px, 1.1vw, 14px); }
+.qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-photo { aspect-ratio: 4 / 5; }
+.qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-info { padding: 30px 8px 14px; }
+.qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-info h3 { font-size: 1.05rem; line-height: 1.2; }
+.qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-info p:empty { display: none; }
+@media (max-height: 700px) {
+  .qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-photo { aspect-ratio: 6 / 7; }
+}
+@media (max-width: 760px) {
+  .qs-screen.is-zonas.is-single.zn-cols-5 .qs-zn-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ── abas de cartões de foto (ex.: "Sinais na corrente"): poucos cartões ficam grandes e centralizados ── */
+.qs-screen.is-zonas:not(.is-single) .qs-zn-grid.count-2 { grid-template-columns: repeat(2, minmax(0, 340px)); justify-content: center; gap: clamp(14px, 2vw, 28px); }
+.qs-screen.is-zonas:not(.is-single) .qs-zn-grid.count-3 { grid-template-columns: repeat(3, minmax(0, 270px)); justify-content: center; gap: clamp(12px, 1.6vw, 22px); }
+.qs-screen.is-zonas:not(.is-single) .qs-zn-grid.count-2 .qs-zn-photo { aspect-ratio: 3 / 2; }
+.qs-screen.is-zonas:not(.is-single) .qs-zn-grid.count-3 .qs-zn-photo { aspect-ratio: 4 / 3; }
+
+/* etiqueta "Perigoso": sempre vermelha, independente da cor do cartão */
+.qs-zn-card .qs-zn-tag { background: #D92B2B !important; color: #fff; }
+
+/* ── "Par perfeito" (ligar requisito ao texto): em telas baixas tudo fica mais compacto, para caber sem rolar ── */
+@media (max-height: 760px) {
+  .qs-screen.is-match .qs-panel-text { padding: 12px 28px 12px; }
+  .qs-screen.is-match .qs-title { margin-bottom: 2px; font-size: 1.25rem; }
+  .qs-screen.is-match .qs-body { margin-bottom: 4px; font-size: .95rem; }
+  .qs-screen.is-match .qs-match-hud { margin: 0 0 6px; }
+  .qs-screen.is-match .qs-match { gap: 10px; }
+  .qs-screen.is-match .qs-match-side { padding: 8px 10px; }
+  .qs-screen.is-match .qs-match-col-title { margin-bottom: 6px; padding: 4px 10px; }
+  .qs-screen.is-match .qs-match-item { padding: 7px 12px; margin-bottom: 6px; font-size: .9rem; line-height: 1.25; }
+}
+
+/* ── Duelo (Sim ou Não): botões coloridos de "duelo", em azul e roxo (nunca verde nem vermelho, para não entregar a resposta) ── */
+.qs-screen.is-question .qs-opts.count-2 .qs-opt { color: #fff; border: 0; box-shadow: 0 10px 24px rgba(22,8,40, .28); transition: transform .15s ease, box-shadow .15s ease, filter .15s ease; }
+.qs-screen.is-question .qs-opts.count-2 .qs-opt:nth-child(1) { background: linear-gradient(135deg, #2A6FDB, #1B4FA6); }
+.qs-screen.is-question .qs-opts.count-2 .qs-opt:nth-child(2) { background: linear-gradient(135deg, #7C3AED, #5B21B6); }
+.qs-screen.is-question .qs-opts.count-2 .qs-opt:not(:disabled):hover { transform: translateY(-3px); filter: brightness(1.08); }
+.qs-screen.is-question .qs-opts.count-2 .qs-opt * { color: #fff; }
+.qs-screen.is-question .qs-opts.count-2 .qs-opt.is-selected, .qs-screen.is-question .qs-opts.count-2 .qs-opt.is-picked { outline: 4px solid #fff; outline-offset: 2px; }
+.qs-screen.is-question .qs-opts.count-2 .qs-opt .qs-num, .qs-screen.is-question .qs-opts.count-2 .qs-opt .qs-num::before { color: #fff !important; }
+
+/* ── faixas que abrem (páginas 5 e 18): foto menor e faixas fechadas mais estreitas, para o texto não ser cortado ── */
+.qs-screen.is-ac .qs-ac-item { flex: 0 0 88px; }
+.qs-screen.is-ac .qs-ac-item.is-on { flex: 1 1 0; }
+.qs-screen.is-ac .qs-ac-strip { flex: 0 0 88px; padding: 14px 6px; }
+.qs-screen.is-ac .qs-ac-photo { height: auto; width: clamp(150px, 19vw, 210px); aspect-ratio: 1 / 1; align-self: center; }
+.qs-screen.is-ac .qs-ac-txt { flex: 1 1 0; min-width: 130px; }
+.qs-screen.is-ac .qs-ac-rule { overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .qs-screen.is-ac .qs-ac-item { flex: 0 0 auto; }
+  .qs-screen.is-ac .qs-ac-photo { width: min(60vw, 240px); height: auto; margin: 0 auto; }
+}
+
+/* título maior nas páginas de passos com foto ao lado (15, 32 e 49) */
+.qs-screen.is-equip-steps.is-side-steps .qs-steps-top .qs-title { font-size: clamp(1.45rem, 3.4vh, 2rem); line-height: 1.15; }
+
+/* abas ainda não abertas pulsam, para mostrar que é preciso clicar nelas (ex.: "Sinais na corrente") */
+.qs-screen.is-zonas .qs-zn-help { margin: 0 auto clamp(8px, 1.4vh, 12px); max-width: 100%; }
+@keyframes qsTabPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(42, 111, 219, .55); } 55% { box-shadow: 0 0 0 9px rgba(42, 111, 219, 0); } }
+.qs-screen.is-zonas .qs-zn-tab:not(.is-on) { animation: qsTabPulse 1.7s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .qs-screen.is-zonas .qs-zn-tab:not(.is-on) { animation: none; } }
+.qs-screen.is-zonas:not(.is-single) .qs-zn-grid.count-2 .qs-zn-photo { aspect-ratio: 16 / 9; }
+.qs-screen.is-zonas:not(.is-single) .qs-zn-grid.count-3 .qs-zn-photo { aspect-ratio: 3 / 2; }

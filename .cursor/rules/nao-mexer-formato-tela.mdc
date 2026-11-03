@@ -1,0 +1,26 @@
+---
+description: Nunca alterar o formato/tamanho do shell da tela do curso
+alwaysApply: true
+---
+
+# Não mexer no formato da tela
+
+O frame da sessão (`.qs-shell`, `--qs-shell-max`, `--qs-shell-h`, `.qs-stage`, setas de navegação) é **global e fixo**. Toda tela usa o mesmo tamanho.
+
+## Proibido
+
+- Alterar `max-width`, `height`, `min-height` ou `width` de `.qs-shell` (incluindo `.qs-shell:has(...)`)
+- Introduzir tokens `--qs-shell-max` / `--qs-shell-h` ou breakpoints globais que mudem o frame (720 / 1024)
+- Criar shells especiais por layout (`is-risk-steps`, `is-resp-risk`, `is-equip-steps`, galeria, etc.)
+- Redimensionar o palco / bordas / raio do card externo da sessão só para uma tela
+- “Responsividade global” que muda o tamanho do estágio/shell
+
+## Permitido
+
+- Mudar **conteúdo interno** da tela (`.qs-screen`, painéis, cards, fotos, tipografia, carrossel)
+- Ajustar layout **dentro** do frame existente para caber sem scroll
+- Media queries só no conteúdo interno, sem tocar no shell
+
+## Como corrigir overflow
+
+Encolher ou reorganizar o conteúdo (carrossel, tipografia, gaps, object-fit). **Nunca** alargar ou alongar o shell.
