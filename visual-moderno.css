@@ -292,3 +292,18 @@
 [data-qs-step].is-counting .qs-ex-btn, [data-qs-step].is-counting .qs-ex-dots { display: none; }
 .qs-ex-big { pointer-events: auto; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .qs-ex-big:active { transform: scale(.98); }
+
+/* celular: telas cujo conteúdo é mais alto que a área não podem ser centralizadas na vertical (o título some em cima e não dá para rolar até ele) */
+@media (max-width: 760px) {
+  .qs-app .qs-screen.is-content .qs-panel-text { align-content: safe center; }
+}
+
+/* celular: durante a contagem o cartão fica compacto e a instrução (já lida antes de apertar) se esconde,
+   para o cartão caber entre o título e o botão "Próximo exercício" sem sobrepor nada */
+@media (max-width: 760px) {
+  .qs-app [data-qs-step].is-counting .qs-step-move { display: none !important; }
+  .qs-app [data-qs-step].is-counting .qs-ex-big { padding: 4px 16px 4px 4px; border-radius: 24px; margin-top: 2px; }
+  .qs-app [data-qs-step].is-counting .qs-ex-big .dial { width: 50px; height: 50px; }
+  .qs-app [data-qs-step].is-counting .qs-ex-big .n { font-size: 1.3rem; }
+  .qs-app [data-qs-step].is-counting .qs-ex-big .m { font-size: .8rem; }
+}

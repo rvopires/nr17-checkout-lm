@@ -2516,6 +2516,8 @@
           pausa = true; pausaMsg = 'lead'; lastSec = -1; big.classList.add('is-lead');
           lbl.textContent = 'Prepare-se';
           t0 = performance.now() + 3000; stop(); iv = setInterval(tick, 100); tick();
+          /* no celular o cartão pode ficar abaixo da dobra: rola até ele */
+          setTimeout(function () { if (big.scrollIntoView) big.scrollIntoView({ block: 'end', behavior: 'smooth' }); }, 80);
         } else {
           beep('click');
           count++;
@@ -2524,6 +2526,7 @@
           lbl.textContent = 'Contar repetições · ' + count + ' de ' + rounds;
           slide.classList.add('is-counting');
           bigShow(count, 'de ' + rounds + ' repetições · toque a cada uma', count / rounds);
+          if (count === 1) setTimeout(function () { if (big.scrollIntoView) big.scrollIntoView({ block: 'end', behavior: 'smooth' }); }, 80);
           if (count >= rounds) done();
         }
       });

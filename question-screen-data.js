@@ -89,7 +89,7 @@
           video('m1-v-1', "Abertura: você já pensou na sua postura hoje?", "≈ 45 s",
             "A instrutora no cenário da área de check outs. Corta para uma operadora em postura neutra, o ajuste da cadeira, a fila de check outs e uma pausa com alongamento.",
             "A instrutora fala direto para a câmera nas duas primeiras frases. Depois, cenas reais cinematográficas na loja, com a locução em off.",
-            "Olá! Este é o treinamento de NR 17: ergonomia para operadores de check out. Você já pensou na sua postura hoje? O segredo está na postura correta. A ergonomia estuda a interação física entre as pessoas e o seu trabalho, adaptando o trabalho, o equipamento e o ambiente ao trabalhador. Neste treinamento, você vai ver como deve ser o posto de trabalho, o manuseio das mercadorias, a organização do atendimento, os cuidados com a postura e os alongamentos. Vamos começar?"),
+            "Olá! Este é o treinamento de NR 17: ergonomia para operadores de check out. Você já pensou na sua postura hoje? O segredo está na postura correta. A ergonomia estuda a interação física entre as pessoas e o seu trabalho, adaptando o trabalho, o equipamento e o ambiente ao trabalhador. Neste treinamento, você vai ver como deve ser o posto de trabalho, o manuseio das mercadorias, a organização do atendimento, os cuidados com a postura e os alongamentos. Vamos começar?", "a8ab1a6c-eb47-4ea8-9d18-96ae6d7ab0c6"),
           {
             "id": "m1-reflexao", "type": "reflect", "title": "Antes de começar",
             "prompt": "Você já pensou na sua postura hoje?", "promptAccent": "Como está o seu corpo agora?",
@@ -104,11 +104,11 @@
           video('m1-v-2', "A origem da ergonomia e a segurança do trabalho", "≈ 35 s",
             "As palavras ergon e nomos em um cartão, a evolução da ferramenta e o colaborador conferindo o corredor com atenção à segurança.",
             "Cartão em Pixar 3D para a origem da palavra; depois fotos reais cinematográficas. Locução calma e direta.",
-            "A palavra ergonomia vem do grego: ergon, que é trabalho, e nomos, que é lei ou regra. Ergonomia quer dizer leis do trabalho. Ela surgiu porque o ser humano sempre quis usar menos esforço físico e mental nas tarefas do dia a dia. A segurança do trabalho cuida da proteção e da integridade da vida do trabalhador, e todas as ações buscam melhorar o ambiente de trabalho e o jeito seguro de fazer cada tarefa."),
+            "A palavra ergonomia vem do grego: ergon, que é trabalho, e nomos, que é lei ou regra. Ergonomia quer dizer leis do trabalho. Ela surgiu porque o ser humano sempre quis usar menos esforço físico e mental nas tarefas do dia a dia. A segurança do trabalho cuida da proteção e da integridade da vida do trabalhador, e todas as ações buscam melhorar o ambiente de trabalho e o jeito seguro de fazer cada tarefa.", "ad80ca7d-ec4a-4e8a-aef2-567e370905a1"),
           video('m1-v-3', "A definição da norma e o que a ergonomia traz", "≈ 30 s",
             "Dois colaboradores diferentes, cada um com o posto ajustado, e a operadora tranquila ao fim.",
             "Fotos reais cinematográficas. Locução calma e direta.",
-            "A norma define a ergonomia como o campo de conhecimentos que busca adequar equipamentos, ambientes e a organização do trabalho às características e limitações de cada pessoa, considerando idade, sexo e habilidades. O resultado é conforto, comodidade e produtividade."),
+            "A norma define a ergonomia como o campo de conhecimentos que busca adequar equipamentos, ambientes e a organização do trabalho às características e limitações de cada pessoa, considerando idade, sexo e habilidades. O resultado é conforto, comodidade e produtividade.", "db75057b-b37c-4724-900f-4020dbc449cd"),
           {
             "id": "m1-o-que-e", "type": "content", "layout": "duo", "kicker": "📄 Texto", "title": "O que é ergonomia",
             "cards": [
@@ -123,11 +123,11 @@
           video('m1-v-4', "O corpo no trabalho", "≈ 35 s",
             "O modelo da coluna, o carrinho carregado e o colaborador em postura neutra.",
             "Fotos reais cinematográficas, sem pessoas nas duas primeiras cenas. Locução em off.",
-            "O corpo humano é feito de ossos, tendões, músculos e ligamentos. Esse sistema permite movimentos amplos e boa coordenação fina, mas com resistência pequena. Por isso, grandes resistências, como carga e peso, devem ser feitas por máquinas e carrinhos, e não pelo corpo. A biomecânica ocupacional é o estudo das posturas e das tarefas do homem no trabalho."),
+            "O corpo humano é feito de ossos, tendões, músculos e ligamentos. Esse sistema permite movimentos amplos e boa coordenação fina, mas com resistência pequena. Por isso, grandes resistências, como carga e peso, devem ser feitas por máquinas e carrinhos, e não pelo corpo. A biomecânica ocupacional é o estudo das posturas e das tarefas do homem no trabalho.", "5b74b429-1494-4f9e-a924-d873f29e78ea"),
           video('m1-v-5', "As 3 áreas da ergonomia", "≈ 40 s",
             "A operadora em postura neutra (física), a equipe conversando com a liderança (organizacional) e o operador atento à tela (cognitiva).",
             "Fotos reais cinematográficas, uma por área. Locução em off.",
-            "A ergonomia tem três áreas. A física trata de anatomia, postura, movimentos repetitivos, manuseio de materiais e LER e DORT, e avalia o posto de trabalho. A organizacional trata de trabalho em grupo, tempo de trabalho, comunicação, projetos participativos e gestão de qualidade. E a cognitiva trata de tomada de decisões, confiabilidade humana, estresse, carga mental e interação com a máquina. Mais do que avaliar, a ergonomia física tem o papel de orientar."),
+            "A ergonomia tem três áreas. A física trata de anatomia, postura, movimentos repetitivos, manuseio de materiais e LER e DORT, e avalia o posto de trabalho. A organizacional trata de trabalho em grupo, tempo de trabalho, comunicação, projetos participativos e gestão de qualidade. E a cognitiva trata de tomada de decisões, confiabilidade humana, estresse, carga mental e interação com a máquina. Mais do que avaliar, a ergonomia física tem o papel de orientar.", "733997b4-8e08-41f4-aa6c-78f13c2cf024"),
           {
             "id": "m1-areas", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "As 3 áreas da ergonomia",
             "groups": [{ "icon": "🧭", "label": "Onde a ergonomia atua", "items": [
@@ -163,7 +163,7 @@
           video('m2-v-6', "Medidas do posto e movimentos naturais", "≈ 40 s",
             "O alcance dos braços, o trabalho em pé e sentado e o tronco reto.",
             "Fotos reais cinematográficas, uma por regra, sempre com a postura correta. Locução em off.",
-            "O Anexo I da NR 17 traz as regras para o posto de trabalho do check out. O mobiliário atende ao corpo de noventa por cento dos trabalhadores, respeitando os alcances dos braços e da visão. O posto garante o trabalho sentado e em pé, com espaço para você se movimentar e para a cadeira. Os movimentos respeitam os ângulos naturais do corpo, sem flexão e sem torção do tronco."),
+            "O Anexo I da NR 17 traz as regras para o posto de trabalho do check out. O mobiliário atende ao corpo de noventa por cento dos trabalhadores, respeitando os alcances dos braços e da visão. O posto garante o trabalho sentado e em pé, com espaço para você se movimentar e para a cadeira. Os movimentos respeitam os ângulos naturais do corpo, sem flexão e sem torção do tronco.", "61eef59f-f3a7-43f0-8200-30cfaba6e37f"),
           {
             "id": "m2-compare-tronco", "type": "compare", "open": true, "title": "Alcançar o produto: dois jeitos",
             "body": "Toque em cada lado para ver o que muda no corpo.",
@@ -178,7 +178,7 @@
           video('m2-v-7', "Cadeira, apoio para os pés, esteira e mobiliário", "≈ 40 s",
             "A cadeira com encosto lombar, o apoio para os pés, a medida de 2,70 m, o telefone e a quina arredondada.",
             "Fotos reais cinematográficas. Locução em off.",
-            "A cadeira tem encosto para apoio lombar e é ajustável à sua estatura e à tarefa. O apoio para os pés é independente da cadeira. Check outs de dois metros e setenta ou mais têm esteira eletromecânica. Segundo o material, as lojas hoje não têm esteira, porque têm menos que isso. Também deve haver comunicação com o apoio e a supervisão, e o mobiliário não pode ter quinas vivas nem rebarbas."),
+            "A cadeira tem encosto para apoio lombar e é ajustável à sua estatura e à tarefa. O apoio para os pés é independente da cadeira. Check outs de dois metros e setenta ou mais têm esteira eletromecânica. Segundo o material, as lojas hoje não têm esteira, porque têm menos que isso. Também deve haver comunicação com o apoio e a supervisão, e o mobiliário não pode ter quinas vivas nem rebarbas.", "3a5781b1-e27f-4d9c-abc8-1cfccdc3ea24"),
           passos('m2-cadeira', 'Cadeira, apoio, esteira e mobiliário', 'Requisito', 'Próximo requisito', 1, [
             ['p2.6a', 'Cadeira de caixa com encosto lombar e regulagem de altura', '🪑', 'Cadeira de trabalho', 'Assento e encosto para apoio lombar, com estofamento de densidade adequada, ajustáveis à estatura do trabalhador e à tarefa.'],
             ['p2.6b', 'Apoio para os pés no chão, sob o balcão', '🦶', 'Apoio para os pés', 'O apoio para os pés é independente da cadeira.'],
@@ -188,7 +188,7 @@
           video('m2-v-8', "Equipamentos e ferramentas do check out", "≈ 35 s",
             "O leitor e a tela ao alcance, o posto completo e os cabos protegidos.",
             "Fotos reais cinematográficas dos equipamentos. Locução em off.",
-            "Os equipamentos e as ferramentas são escolhidos para favorecer os movimentos da função, sem exigir muita força, pressão, preensão, flexão, extensão ou torção. Ficam dentro do alcance das suas mãos e da sua visão, têm proteção contra acidentes mecânicos ou elétricos e são mantidos em bom funcionamento. No seu check out, você tem a tela touch screen, o leitor de código de barras, o telefone e a campainha, a cadeira com regulagem de altura e encosto e o apoio para os pés."),
+            "Os equipamentos e as ferramentas são escolhidos para favorecer os movimentos da função, sem exigir muita força, pressão, preensão, flexão, extensão ou torção. Ficam dentro do alcance das suas mãos e da sua visão, têm proteção contra acidentes mecânicos ou elétricos e são mantidos em bom funcionamento. No seu check out, você tem a tela touch screen, o leitor de código de barras, o telefone e a campainha, a cadeira com regulagem de altura e encosto e o apoio para os pés.", "7036baac-31d4-4f96-aff0-bf311e5d8c87"),
           {
             "id": "m2-seu-checkout", "type": "content", "layout": "zonas", "kicker": "📄 Texto", "title": "O que tem no seu check out",
             "groups": [{ "icon": "🛒", "label": "Equipamentos do operador de check out", "items": [
@@ -203,7 +203,7 @@
           video('m2-v-9', "Ambiente, temperatura e ajustes do posto", "≈ 30 s",
             "A luz da entrada com cortina de ar, o ar condicionado fora da linha do sopro e o ajuste do apoio para os pés.",
             "Fotos reais cinematográficas. Locução em off.",
-            "O ambiente também importa: iluminação, ruído e conforto térmico seguem a NR 17, e você é protegido de correntes de ar e de reflexos incômodos. O material indica de dezoito a vinte e cinco graus, e o ar condicionado não deve soprar direto em você. O posto também prevê ajustes localizados, exceto nos equipamentos fixos, pensando no seu conforto."),
+            "O ambiente também importa: iluminação, ruído e conforto térmico seguem a NR 17, e você é protegido de correntes de ar e de reflexos incômodos. O material indica de dezoito a vinte e cinco graus, e o ar condicionado não deve soprar direto em você. O posto também prevê ajustes localizados, exceto nos equipamentos fixos, pensando no seu conforto.", "74aa179d-94ee-42c1-a118-97e4dc1cc31c"),
           intro(2, 'Monte o posto', 1, 1, '🪑', 'Ligue cada item do posto de check out ao que a norma pede.'),
           {
             "id": "m2-match", "type": "match", "title": "Ligue o item do posto ao que a norma pede",
@@ -232,11 +232,11 @@
           video('m3-v-10', "Manuseio de mercadorias e carrinhos", "≈ 35 s",
             "O código de barras lido sem levantar o produto, o apoio de um colega e o carrinho homologado com chapas.",
             "Fotos reais cinematográficas. Locução em off.",
-            "A loja deve evitar que você use força muscular excessiva ao manusear mercadorias. Para isso, negocia o tamanho e o volume das embalagens com os fornecedores, usa equipamentos adequados, apresenta o código de barras ao leitor de outras formas, tem pessoal auxiliar e adota outras medidas. Quando o volume é grande ou o peso é excessivo, a organização usa mecanismos auxiliares, como carrinhos homologados para transportar chapas de madeira."),
+            "A loja deve evitar que você use força muscular excessiva ao manusear mercadorias. Para isso, negocia o tamanho e o volume das embalagens com os fornecedores, usa equipamentos adequados, apresenta o código de barras ao leitor de outras formas, tem pessoal auxiliar e adota outras medidas. Quando o volume é grande ou o peso é excessivo, a organização usa mecanismos auxiliares, como carrinhos homologados para transportar chapas de madeira.", "e5e1d84b-e933-4092-9ec6-5e68bfcddeed"),
           video('m3-v-11', "O ensacamento", "≈ 20 s",
             "Os check outs com um ensacador e o cliente ensacando no autoatendimento.",
             "Fotos reais cinematográficas. Locução em off.",
-            "O ensacamento também não pode virar parte da sua rotina: a loja mantém no mínimo um ensacador a cada três check outs em funcionamento e facilita o ensacamento pelo cliente, como no caixa de autoatendimento."),
+            "O ensacamento também não pode virar parte da sua rotina: a loja mantém no mínimo um ensacador a cada três check outs em funcionamento e facilita o ensacamento pelo cliente, como no caixa de autoatendimento.", "352cbdf7-f2df-44f6-a876-df53e91f2ddf"),
           {
             "id": "m3-ensacamento", "type": "content", "layout": "duo", "kicker": "📄 Texto", "title": "O ensacamento",
             "cards": [
@@ -251,11 +251,11 @@
           video('m3-v-12', "Organização do atendimento", "≈ 35 s",
             "A fila única, o check out preferencial e a pausa na área de apoio.",
             "Fotos reais cinematográficas. Locução em off.",
-            "O número de check outs abertos e de operadores deve ser compatível com o fluxo de clientes, respeitando o seu ritmo. Para isso, a loja usa pessoas de apoio ou de substituição, filas únicas por grupos de check outs, check outs especiais para idosos, gestantes, pessoas com deficiência e clientes com poucas mercadorias, pausas durante a jornada e rodízio entre operadores."),
+            "O número de check outs abertos e de operadores deve ser compatível com o fluxo de clientes, respeitando o seu ritmo. Para isso, a loja usa pessoas de apoio ou de substituição, filas únicas por grupos de check outs, check outs especiais para idosos, gestantes, pessoas com deficiência e clientes com poucas mercadorias, pausas durante a jornada e rodízio entre operadores.", "cf3e04af-5e70-4c84-a907-4081770fb87a"),
           video('m3-v-13', "Saídas do posto e o seu crachá", "≈ 25 s",
             "A operadora avisando a líder e se levantando com a coluna reta, e o crachá com o nome escolhido.",
             "Fotos reais cinematográficas. Locução em off.",
-            "Você também pode sair do posto a qualquer momento da jornada, avisando, para atender suas necessidades fisiológicas, além do intervalo de refeição previsto na CLT. E todo trabalhador do check out usa um crachá visível, com o nome ou sobrenome que ele mesmo escolhe."),
+            "Você também pode sair do posto a qualquer momento da jornada, avisando, para atender suas necessidades fisiológicas, além do intervalo de refeição previsto na CLT. E todo trabalhador do check out usa um crachá visível, com o nome ou sobrenome que ele mesmo escolhe.", "e10613cf-0015-473f-95e9-27d330ecf354"),
           passos('m3-direitos', 'Saídas do posto e seu crachá', 'Direito', 'Próximo direito', 1.5, [
             ['p3.8', 'Operadora avisando a líder antes de deixar o posto', '🚻', 'Saídas do posto', 'O operador pode sair do posto a qualquer momento da jornada, avisando, para atender suas necessidades fisiológicas. Isso vale além do intervalo de refeição previsto na CLT.'],
             ['p3.9', 'Close de um crachá no colete, com o nome visível', '🪪', 'Seu nome no crachá', 'Todo trabalhador do check out usa um dispositivo de identificação visível, com nome e/ou sobrenome escolhido por ele mesmo.']
@@ -289,7 +289,7 @@
           video('m4-v-14', "Postura parada e o touch screen", "≈ 1 min",
             "A postura parada, a alternância entre ficar em pé e sentado, o braço elevado no touch screen e a troca de braço.",
             "Fotos reais cinematográficas, uma cena por movimento citado. Locução em off.",
-            "Além de ajustar o posto, é preciso cuidar da postura. Pela ISO 11226, postura estática é a que fica mantida por mais de quatro segundos. E variar a postura direto, em pé, sentado e caminhando, por mais de duas horas seguidas já gera risco. Ao digitar nas telas touch screen do atendimento, vale a regra de vinte por cento de contração e oitenta por cento de recuperação. Por exemplo: se você eleva o braço por dois minutos, precisa de oito minutos de recuperação, e deve alternar os braços."),
+            "Além de ajustar o posto, é preciso cuidar da postura. Pela ISO 11226, postura estática é a que fica mantida por mais de quatro segundos. E variar a postura direto, em pé, sentado e caminhando, por mais de duas horas seguidas já gera risco. Ao digitar nas telas touch screen do atendimento, vale a regra de vinte por cento de contração e oitenta por cento de recuperação. Por exemplo: se você eleva o braço por dois minutos, precisa de oito minutos de recuperação, e deve alternar os braços.", "fdd6456d-6efc-4708-891c-4610f3817b4a"),
           {
             "id": "m4-compare-braco", "type": "compare", "open": true, "title": "Braço elevado no touch screen",
             "body": "Toque em cada lado para ver o exemplo do material.",
@@ -304,11 +304,11 @@
           video('m4-v-15', "Efeitos da má postura e a postura neutra", "≈ 25 s",
             "Quatro ícones das regiões do corpo e a operadora vista de costas em postura neutra.",
             "Um cartão de ícones em Pixar 3D e uma foto real, sem mostrar dor. Locução em off.",
-            "A má postura pode causar dor no pescoço, nas costas, nos braços, nos antebraços e nas mãos, além de cansaço, desconforto e outros problemas, como LER e DORT. Por isso, mantenha-se sempre na postura neutra."),
+            "A má postura pode causar dor no pescoço, nas costas, nos braços, nos antebraços e nas mãos, além de cansaço, desconforto e outros problemas, como LER e DORT. Por isso, mantenha-se sempre na postura neutra.", "c2786f65-821d-444f-a4f3-ddc6ae85908b"),
           video('m4-v-16', "LER/DORT e os punhos no balcão de apoio", "≈ 30 s",
             "Os quatro fatores de risco em ícones e as mãos digitando com os punhos retos.",
             "Um cartão de ícones em Pixar 3D e uma foto real. Locução em off.",
-            "LER é a lesão por esforço repetitivo e DORT é a doença osteomuscular relacionada ao trabalho. A ergonomia ajuda a reduzir o alto índice de afastamento e cuida da saúde do trabalhador. A prevenção começa pelos fatores de risco: movimentos repetitivos, movimentos bruscos, uso de força e posições forçadas ou por tempo prolongado. No balcão da liderança de caixa e no balcão de apoio do autoatendimento, que têm mouse e teclado, evite dobrar os punhos."),
+            "LER é a lesão por esforço repetitivo e DORT é a doença osteomuscular relacionada ao trabalho. A ergonomia ajuda a reduzir o alto índice de afastamento e cuida da saúde do trabalhador. A prevenção começa pelos fatores de risco: movimentos repetitivos, movimentos bruscos, uso de força e posições forçadas ou por tempo prolongado. No balcão da liderança de caixa e no balcão de apoio do autoatendimento, que têm mouse e teclado, evite dobrar os punhos.", "1f15c212-0bb1-4507-aec4-cb0075c73ceb"),
           {
             "id": "m4-compare-punhos", "type": "compare", "open": true, "title": "Mouse e teclado no balcão de apoio",
             "body": "O balcão da liderança de caixa e o balcão do self check out têm digitação. Toque em cada lado.",
@@ -323,7 +323,7 @@
           video('m4-v-17', "Alongamento: mãos, antebraços e braços", "≈ 1 min 20 s",
             "Cada movimento citado na locução aparece em uma cena: fechar e abrir a mão, girar o punho, dedos entrelaçados, antebraço, cotovelo atrás da cabeça, braços atrás do corpo e braços para cima.",
             "Uma cena real para cada movimento, na área de apoio ao lado dos check outs, feito devagar e dentro do limite do corpo. Locução em off.",
-            "Ficar sentado por muito tempo causa tensão no pescoço e nos ombros e dor na região lombar. Faça os alongamentos várias vezes ao dia ou sempre que se sentir cansado. Comece pelas mãos: feche firmemente a mão e abra, esticando os dedos. Gire o punho nos dois sentidos, com os dedos relaxados. Entrelace os dedos e faça movimentos de onda, e gire os polegares. Repita três vezes cada movimento. Para o antebraço, estique o braço com a palma para fora, como um sinal de pare, e puxe a mão com a outra em direção ao corpo, por vinte segundos. Leve o cotovelo atrás da cabeça e conduza com a outra mão, por vinte segundos. Entrelace os dedos atrás do corpo e depois para cima, por vinte segundos, três vezes."),
+            "Ficar sentado por muito tempo causa tensão no pescoço e nos ombros e dor na região lombar. Faça os alongamentos várias vezes ao dia ou sempre que se sentir cansado. Comece pelas mãos: feche firmemente a mão e abra, esticando os dedos. Gire o punho nos dois sentidos, com os dedos relaxados. Entrelace os dedos e faça movimentos de onda, e gire os polegares. Repita três vezes cada movimento. Para o antebraço, estique o braço com a palma para fora, como um sinal de pare, e puxe a mão com a outra em direção ao corpo, por vinte segundos. Leve o cotovelo atrás da cabeça e conduza com a outra mão, por vinte segundos. Entrelace os dedos atrás do corpo e depois para cima, por vinte segundos, três vezes.", "931a3d04-203e-49e4-9c2b-b0a4a5982821"),
           passos('m4-maos-bracos', 'Alongamento: mãos, antebraços e braços', 'Exercício', 'Próximo exercício', 1, [
             ['p4.8a', 'Mãos fechando firme e abrindo com os dedos esticados', '✊', 'Fechar e abrir a mão', 'Feche firmemente a mão e abra, esticando os dedos — ×3'],
             ['p4.8b', 'Punho girando devagar com os dedos relaxados', '🔃', 'Girar o punho', 'Gire o punho no sentido horário e no anti-horário, com os dedos relaxados — ×3'],
@@ -336,7 +336,7 @@
           video('m4-v-18', "Alongamento: cabeça, pescoço e ombros", "≈ 50 s",
             "O sim e não com a cabeça, a inclinação lateral com a mão, os ombros subindo até as orelhas, o giro dos ombros e a caminhada para beber água.",
             "Uma cena real para cada movimento, na área de apoio ao lado dos check outs, feito devagar. Locução em off.",
-            "Agora, a cabeça e o pescoço. Faça o sinal de sim e de não com a cabeça, devagar, com os ombros relaxados. Evite mover a cabeça para trás, porque isso pode comprimir os nervos. Incline a cabeça para o lado com a ajuda da mão, por vinte segundos, três vezes de cada lado. Para os ombros, inspire elevando os ombros até as orelhas e solte ao expirar, três vezes. Depois, gire os ombros para a frente e para trás, três vezes em cada sentido. E nas pausas, levante, caminhe e beba uma água."),
+            "Agora, a cabeça e o pescoço. Faça o sinal de sim e de não com a cabeça, devagar, com os ombros relaxados. Evite mover a cabeça para trás, porque isso pode comprimir os nervos. Incline a cabeça para o lado com a ajuda da mão, por vinte segundos, três vezes de cada lado. Para os ombros, inspire elevando os ombros até as orelhas e solte ao expirar, três vezes. Depois, gire os ombros para a frente e para trás, três vezes em cada sentido. E nas pausas, levante, caminhe e beba uma água.", "39ff4da5-db5c-4806-a3dc-04989ddc8e2f"),
           passos('m4-pescoco', 'Alongamento: cabeça, pescoço e ombros', 'Exercício', 'Próximo exercício', 1, [
             ['p4.10a', 'Cabeça fazendo o sinal de sim e de não, devagar', '🙂', 'Sim e não', 'Faça o sinal de “sim” e de “não” com a cabeça, devagar, com os ombros relaxados. Evite mover a cabeça para trás, porque pode comprimir os nervos — ×3'],
             ['p4.10b', 'Cabeça inclinada para o lado com a ajuda da mão', '↔️', 'Inclinar a cabeça', 'Incline a cabeça para o lado com a ajuda da mão do mesmo lado — 20 s, ×3 (cada lado)'],
@@ -346,7 +346,7 @@
           video('m4-v-19', "Alongamentos na cadeira", "≈ 50 s",
             "Uma cena para cada movimento feito sentado: braços à frente, braços para cima, um braço sobe e o outro desce, giro do tronco, peito aberto com ombros para trás e sacudir as mãos.",
             "Uma imagem em estilo infográfico para cada movimento, em verde da Leroy, com a locução em off.",
-            "Agora, sentado, entrelace os dedos e estique os braços à frente, por dez a vinte segundos, duas vezes. Depois, estique os braços para cima, por dez a quinze segundos. Levante um braço e abaixe o outro, por oito a dez segundos de cada lado. Gire o tronco com suavidade, por oito a dez segundos para cada lado. Apoie as costas no encosto, abra o peito e leve os ombros para trás, por dez a quinze segundos. Para terminar, sacuda as mãos por oito a dez segundos."),
+            "Agora, sentado, entrelace os dedos e estique os braços à frente, por dez a vinte segundos, duas vezes. Depois, estique os braços para cima, por dez a quinze segundos. Levante um braço e abaixe o outro, por oito a dez segundos de cada lado. Gire o tronco com suavidade, por oito a dez segundos para cada lado. Apoie as costas no encosto, abra o peito e leve os ombros para trás, por dez a quinze segundos. Para terminar, sacuda as mãos por oito a dez segundos.", "d00374f4-e164-471d-a895-6809fa6b41ec"),
           passos('m4-cadeira', 'Alongamentos na cadeira', 'Exercício', 'Próximo exercício', 1, [
             ['p4.11a', 'Dedos entrelaçados e braços esticados à frente, sentado', '🤝', 'Braços à frente', 'Entrelace os dedos e estique os braços à frente, por 10 a 20 segundos — 20 s, ×2'],
             ['p4.11b', 'Braços esticados para cima, sentado', '🙆', 'Braços para cima', 'Estique os braços para cima, por 10 a 15 segundos — 15 s'],
@@ -358,7 +358,7 @@
           video('m4-v-20', "Alongamentos em pé", "≈ 30 s",
             "Uma cena para cada movimento feito em pé: braço do relógio para trás das costas com a cabeça inclinada, palmas das mãos unidas na frente do peito e dorso das mãos unidos com os dedos para baixo.",
             "Uma animação ou imagem para cada movimento, em verde da Leroy, com a locução em off.",
-            "Agora, em pé. Leve o braço do relógio para trás das costas e incline a cabeça para o lado oposto, por dez a doze segundos. Troque de lado. Una as palmas das mãos na frente do peito e abaixe-as devagar, mantendo por dez segundos. Depois, una o dorso das mãos, com os dedos para baixo, e mantenha por dez segundos."),
+            "Agora, em pé. Leve o braço do relógio para trás das costas e incline a cabeça para o lado oposto, por dez a doze segundos. Troque de lado. Una as palmas das mãos na frente do peito e abaixe-as devagar, mantendo por dez segundos. Depois, una o dorso das mãos, com os dedos para baixo, e mantenha por dez segundos.", "5f637b63-e5f4-4fff-8a17-fd92f3576c54"),
           passos('m4-em-pe', 'Alongamentos em pé', 'Exercício', 'Próximo exercício', 1, [
             ['p4.12a', 'Braço do relógio atrás das costas e cabeça inclinada para o lado oposto', '🕐', 'Braço atrás das costas', 'Leve o braço do relógio para trás das costas e incline a cabeça para o lado oposto, por 10 a 12 segundos. Troque de lado — 12 s, ×2 (cada lado)'],
             ['p4.12b', 'Palmas das mãos unidas na frente do peito, descendo devagar', '🙏', 'Palmas unidas', 'Una as palmas das mãos na frente do peito e abaixe-as devagar, mantendo por 10 segundos — 10 s'],
@@ -367,7 +367,7 @@
           video('m4-v-21', "Digitação: punhos retos no teclado e no mouse", "≈ 35 s",
             "O balcão de apoio com mouse e teclado: o jeito errado, com o punho dobrado, e o jeito certo, com os dedos alinhados ao antebraço e o apoio de punho.",
             "Uma imagem em estilo infográfico para o errado e uma para o certo, em verde da Leroy, com a locução em off.",
-            "No balcão de apoio, com mouse e teclado, o punho precisa ficar reto, alinhado com o antebraço. Errado é dobrar o punho para cima, para baixo ou para os lados, ou digitar com as mãos tortas em relação ao antebraço. Certo é manter os dedos alinhados com o antebraço, usar um apoio de punho de espuma à frente do teclado e do mouse e deixar os antebraços na horizontal."),
+            "No balcão de apoio, com mouse e teclado, o punho precisa ficar reto, alinhado com o antebraço. Errado é dobrar o punho para cima, para baixo ou para os lados, ou digitar com as mãos tortas em relação ao antebraço. Certo é manter os dedos alinhados com o antebraço, usar um apoio de punho de espuma à frente do teclado e do mouse e deixar os antebraços na horizontal.", "787298d8-9629-42d5-85c7-cd28e8c375d8"),
           passos('m4-digitacao', 'Digitação: punhos retos', 'Passo', 'Próximo passo', 1, [
             ['p4.13a', 'Mãos digitando com o punho dobrado para cima, para baixo ou para o lado', '🙅', 'Evite dobrar o punho', 'Dobrar o punho para cima, para baixo ou para os lados, ou digitar com as mãos tortas em relação ao antebraço, sobrecarrega o punho.'],
             ['p4.13b', 'Mãos digitando com os dedos alinhados ao antebraço, antebraços na horizontal', '✅', 'Punho reto', 'Mantenha os dedos alinhados com o antebraço e deixe os antebraços na horizontal.'],
@@ -400,7 +400,7 @@
           video('m5-v-19', "Encerramento", "≈ 30 s",
             "A instrutora no cenário do início, com a mensagem final; corta para a operadora de postura correta, sorrindo.",
             "A instrutora fala direto para a câmera. Uma cena real curta ao final.",
-            "Você concluiu o treinamento de NR 17: ergonomia para operadores de check out. Lembre-se: a postura neutra, o posto ajustado e os alongamentos protegem o seu corpo todos os dias. Pense na sua postura todos os dias."),
+            "Você concluiu o treinamento de NR 17: ergonomia para operadores de check out. Lembre-se: a postura neutra, o posto ajustado e os alongamentos protegem o seu corpo todos os dias. Pense na sua postura todos os dias.", "b8c5b898-de12-4aa6-9924-24bdefd7214e"),
           {
             "id": "m5-finale", "type": "finale", "kicker": "🏆 Conclusão", "eyebrow": "Certificado de conclusão", "title": "Parabéns",
             "image": F + 'capa-parabens.png', "imageAlt": "Capa de parabéns — conclusão do treinamento",
