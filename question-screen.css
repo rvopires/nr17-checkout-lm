@@ -181,44 +181,36 @@
   color: #d4f84a !important;
   line-height: 1.35 !important;
 }
-.qs-home-card > p {
+.qs-home-card > p:not(.qs-home-meta) {
   margin: 0 0 16px;
   font-size: clamp(13px, 1.1vw, 15px);
   color: rgba(255, 255, 255, 0.82);
   line-height: 1.55;
   font-weight: 600;
 }
-.qs-home-badges {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 10px;
-  margin-bottom: 18px;
-  width: 100%;
-}
-.qs-home-badge {
-  flex: 1 1 0;
-  min-width: 0;
+.qs-home-meta {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  gap: 10px;
-  padding: 12px 14px;
-  background: rgba(200,243,29, 0.14);
-  border: 1px solid rgba(200,243,29, 0.38);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 18px;
+  padding: 10px 14px;
   border-radius: 12px;
-  color: #d4f84a;
-}
-.qs-home-badge strong {
-  display: block;
+  background: rgba(200,243,29, 0.12);
+  border: 1px solid rgba(200,243,29, 0.32);
   font-family: var(--qs-font-h);
-  font-size: 0.88rem;
-  color: #fff;
-}
-.qs-home-badge span {
-  font-size: 0.75rem;
-  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(12px, 1.05vw, 13.5px);
   font-weight: 600;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.2;
+  text-align: center;
+}
+.qs-home-meta strong {
+  color: #d4f84a;
+  font-weight: 800;
+  margin-right: 0.35em;
 }
 .qs-home-actions {
   width: 100%;

@@ -21,7 +21,7 @@
     'Segurança do trabalho.',
     'NR 17, Ergonomia no check out.',
     'Aprenda a cuidar do seu corpo no check out, seguindo a NR 17.',
-    'São cinco módulos, com conteúdo completo, em treinamento cem por cento online.',
+    'São cinco módulos, com conteúdo completo.',
     'Na imagem: capa do treinamento, instrutora da TecnoCursos na área de check outs da loja.',
     'Na imagem: logo TecnoCursos.'
   ].join(' ');
