@@ -2799,6 +2799,7 @@
     var items = shuffle((this.data.items || []).slice());
     var idx = 0;
     var tries = 0;
+    var busy = false;
     var cardEl = this.el.querySelector('[data-qs-sort-card]');
     var prog = this.el.querySelector('[data-qs-sort-progress]');
     var fb = this.el.querySelector('[data-qs-sort-fb]');
@@ -2806,29 +2807,56 @@
     var leftLabel = this.data.leftLabel || '';
     var rightLabel = this.data.rightLabel || '';
 
+    function clearFb() {
+      if (!fb) return;
+      fb.className = 'qs-sort-fb';
+      fb.textContent = '';
+    }
+    function setBuckets(disabled) {
+      buckets.forEach(function (b) { b.disabled = !!disabled; });
+    }
+    /* tempo pra ler o “why”; sem why, só o ✓ Faça/Evite */
+    function readDelay(it) {
+      var why = it && it.why ? String(it.why) : '';
+      if (!why) return 1200;
+      return Math.min(2800, Math.max(1600, 900 + why.length * 28));
+    }
     function show() {
       if (idx >= items.length) return;
+      busy = false;
+      clearFb();
+      setBuckets(false);
       cardEl.textContent = items[idx].text;
-      cardEl.classList.remove('is-out', 'is-shake');
+      cardEl.classList.remove('is-out', 'is-shake', 'to-left', 'to-right');
       void cardEl.offsetWidth;
       cardEl.classList.add('is-in');
       if (prog) prog.textContent = (idx + 1) + ' de ' + items.length;
     }
     function answer(side) {
-      if (self.state.answered || idx >= items.length) return;
+      if (busy || self.state.answered || idx >= items.length) return;
       var it = items[idx];
       if (it.side === side) {
+        busy = true;
+        setBuckets(true);
         beep('ok');
         cardEl.classList.remove('is-in');
         cardEl.classList.add('is-out', side === 'left' ? 'to-left' : 'to-right');
-        if (fb) { fb.className = 'qs-sort-fb is-ok'; fb.textContent = '✓ ' + (side === 'left' ? leftLabel : rightLabel) + (it.why ? ': ' + it.why : ''); }
+        if (fb) {
+          fb.className = 'qs-sort-fb is-ok';
+          fb.textContent = '✓ ' + (side === 'left' ? leftLabel : rightLabel) + (it.why ? ': ' + it.why : '');
+        }
         idx++;
+        var delay = readDelay(it);
         if (idx >= items.length) {
           if (prog) prog.textContent = items.length + ' de ' + items.length;
           var max = self.options.maxPoints != null ? Number(self.options.maxPoints) : 50;
-          setTimeout(function () { beep('end'); self._complete({ kind: 'sort', correct: true, points: max, tries: tries }); }, 500);
+          setTimeout(function () {
+            clearFb();
+            beep('end');
+            self._complete({ kind: 'sort', correct: true, points: max, tries: tries });
+          }, delay);
         } else {
-          setTimeout(show, 420);
+          setTimeout(show, delay);
         }
       } else {
         tries++;
@@ -2836,7 +2864,10 @@
         cardEl.classList.remove('is-shake');
         void cardEl.offsetWidth;
         cardEl.classList.add('is-shake');
-        if (fb) { fb.className = 'qs-sort-fb is-nok'; fb.textContent = 'Ainda não. Pense de novo e escolha o outro grupo.'; }
+        if (fb) {
+          fb.className = 'qs-sort-fb is-nok';
+          fb.textContent = 'Ainda não. Pense de novo e escolha o outro grupo.';
+        }
       }
     }
     buckets.forEach(function (b) {

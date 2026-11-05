@@ -102,7 +102,8 @@
   }
 
   /* Blocos de conteúdo na mesma ordem em que o contentBlocks() os desenha:
-     corpo, números, cards, itens, comparação, tópicos, regras, citação, nota. */
+     corpo, números, cards, itens, grupos (zonas/acordeão), comparação,
+     tópicos, regras, citação, nota. */
   function contentParts(screen) {
     var parts = [];
 
@@ -118,6 +119,14 @@
     list(screen.items).forEach(function (it) {
       parts.push(labelled(it.title, it.text || it.body));
       if (it.imageAlt) parts.push('Na imagem: ' + clean(it.imageAlt) + '.');
+    });
+    /* layout zonas / acordeão / lista-foto: os cards vivem em groups[].items */
+    list(screen.groups).forEach(function (g) {
+      if (g.label) parts.push(sentence(g.label));
+      list(g.items).forEach(function (it) {
+        parts.push(labelled(it.title, it.text || it.body));
+        if (it.imageAlt) parts.push('Na imagem: ' + clean(it.imageAlt) + '.');
+      });
     });
     list(screen.compare).forEach(function (c) {
       parts.push(labelled(c.label, c.text || c.body));

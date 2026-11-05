@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T17:52:41.955Z",
+  "generatedAt": "2026-11-05T12:37:57.055Z",
   "items": {
     "home": {
       "file": "assets/audio/home.mp3",
@@ -103,7 +103,7 @@
     },
     "m1-areas": {
       "file": "assets/audio/m1-areas.mp3",
-      "text": "As 3 áreas da ergonomia."
+      "text": "As 3 áreas da ergonomia. Onde a ergonomia atua. Física: Anatomia, postura, movimentos repetitivos, manuseio de materiais e LER/DORT. Avalia o posto de trabalho. Na imagem: Operadora em postura neutra no check out. Organizacional: Trabalho em grupo, tempo de trabalho, comunicação, projetos participativos e gestão de qualidade. Na imagem: Equipe de caixa conversando com a liderança. Cognitiva: Tomada de decisões, confiabilidade humana, estresse, carga mental e interação com a máquina. Na imagem: Operador atento à tela touch screen."
     },
     "m1-quiz-intro": {
       "file": "assets/audio/m1-quiz-intro.mp3",
@@ -147,7 +147,7 @@
     },
     "m2-seu-checkout": {
       "file": "assets/audio/m2-seu-checkout.mp3",
-      "text": "O que tem no seu check out."
+      "text": "O que tem no seu check out. Equipamentos do operador de check out. Tela touch screen. Na imagem: Tela touch screen do check out. Leitor de código de barras. Na imagem: Leitor de código de barras sobre o balcão. Telefone e campainha: Comunicação com o apoio e a supervisão. Na imagem: Telefone de chamada e campainha do check out. Cadeira com regulagem: Regulagem de altura e encosto. Na imagem: Cadeira de caixa com regulagem de altura. Apoio para os pés. Na imagem: Apoio para os pés sob o balcão."
     },
     "m2-v-9": {
       "file": "assets/audio/m2-v-9.mp3",
